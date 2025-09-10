@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b37a8157ba4b03db",
+            "id": "955c9659edb086ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML/4.路径.md",
+                "file": "HTML/第二部分/1列表,表格,表单.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4.路径"
+              "title": "1列表,表格,表单"
             }
           },
           {
-            "id": "a0da9555de04dd31",
+            "id": "dbf320e2ba69ee5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML/3.2各种标签.md",
+                "file": "HTML/第二部分/1.3表单.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.2各种标签"
+              "title": "1.3表单"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -185,23 +184,32 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a0da9555de04dd31",
+  "active": "dbf320e2ba69ee5f",
   "lastOpenFiles": [
-    "Pasted image 20250910191802.png",
-    "html.css图片/音频属性简写.png",
-    "html.css图片/音频标签.png",
-    "html.css图片/超链接01png.png",
-    "HTML/5.超链接.md",
-    "HTML/4.路径.md",
-    "HTML/未命名",
-    "HTML/3.2各种标签.md",
-    "HTML/3.3标题标签.md",
-    "html.css图片/图像标签.png",
-    "HTML/3.1标签.md",
-    "html.css图片/网页骨架.png",
-    "HTML/1定义.md",
+    "HTML/第二部分/1.2表格.md",
+    "HTML/第二部分/1.3表单.md",
+    "html.css图片/删除后.png",
+    "html.css图片/合并表格删除后.png",
+    "HTML/第二部分/1列表,表格,表单.md",
+    "Pasted image 20250910220319.png",
+    "html.css图片/未删除前.png",
+    "html.css图片/合并表格未删除前.png",
+    "html.css图片/表格结构标签.png",
+    "html.css图片/表格03.png",
+    "html.css图片/表格02.png",
+    "html.css图片/表格01.png",
+    "HTML/第二部分/1.1列表.md",
+    "html.css图片/定义列表01.png",
+    "HTML/第一部分/1定义.md",
+    "HTML/第二部分",
+    "HTML/第一部分/3.2各种标签.md",
+    "HTML/第一部分",
+    "HTML/第一部分/5.超链接.md",
+    "HTML/第一部分/4.路径.md",
+    "HTML/第一部分/3.3标题标签.md",
+    "HTML/第一部分/3.1标签.md",
     "HTML/基本标签",
-    "HTML/2基本骨架.md",
+    "HTML/第一部分/2基本骨架.md",
     "html.css图片"
   ]
 }
