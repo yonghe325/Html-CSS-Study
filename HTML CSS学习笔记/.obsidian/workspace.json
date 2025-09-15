@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "ea1e432e5b94d8d6",
+        "id": "8298963cc4d8ffbe",
         "type": "tabs",
         "children": [
           {
-            "id": "955c9659edb086ea",
+            "id": "05fbf6399749a2ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML/第二部分/1列表,表格,表单.md",
+                "file": "HTML/第一部分/3.2各种标签.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1列表,表格,表单"
-            }
-          },
-          {
-            "id": "dbf320e2ba69ee5f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HTML/第一部分/4.路径.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4.路径"
+              "title": "3.2各种标签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\" |\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +74,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,12 +170,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bbcbbdc6200c1f0a",
+  "active": "05fbf6399749a2ab",
   "lastOpenFiles": [
-    "HTML/1定义.md",
-    "HTML/第一部分/4.路径.md",
-    "HTML/4.路径.md",
+    "HTML/第一部分/3.1标签.md",
+    "HTML/第一部分/3.2各种标签.md",
+    "HTML/第一部分/2基本骨架.md",
     "HTML/第一部分/5.超链接.md",
+    "HTML/第一部分/3.3标题标签.md",
+    "HTML/第一部分/4.路径.md",
+    "HTML/1定义.md",
+    "HTML/4.路径.md",
     "HTML/5.超链接.md",
     "HTML/第二部分/1列表,表格,表单.md",
     "HTML/第二部分/1.1列表.md",
@@ -207,12 +197,8 @@
     "html.css图片/定义列表01.png",
     "HTML/第一部分/1定义.md",
     "HTML/第二部分",
-    "HTML/第一部分/3.2各种标签.md",
     "HTML/第一部分",
-    "HTML/第一部分/3.3标题标签.md",
-    "HTML/第一部分/3.1标签.md",
     "HTML/基本标签",
-    "HTML/第一部分/2基本骨架.md",
     "html.css图片"
   ]
 }
