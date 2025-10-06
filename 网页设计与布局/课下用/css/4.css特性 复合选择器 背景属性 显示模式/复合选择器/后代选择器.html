@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        div span{
+            color: red;
+        }
+        div span div{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <span>div外的span</span>
+    <div>
+        <span>
+            111
+            <div>
+                div里的span里的div
+            </div>
+        </span>
+        <span>div里的span</span>
+    </div>
+</body>
+</html>

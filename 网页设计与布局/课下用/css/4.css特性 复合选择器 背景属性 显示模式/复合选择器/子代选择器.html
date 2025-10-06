@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器</title>
+    <style>
+        div > span{
+            color: red;
+        }
+        div > p > span {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>这里是div里的span</span>
+        <p>
+            <span>
+                这里是div里p里的span
+            </span>
+            <br>
+            这里是p
+        </p>
+    </div>
+</body>
+</html>
