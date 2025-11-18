@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>
+        body{
+            margin: 0 auto;
+            padding: 0;
+        }
+        .position01{
+            position: relative;
+        }
+        .position01>img{
+            width: 300px;
+        }
+        .position01>div img{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+            width: 100px;
+            height: 50px;
+            border: red solid 2px;
+     
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>第一段第一段第一段第一段第一段第一段第一段第一段第一段第一段第一段第一段第一段第一段第一段第一段第一段</p> -->
+    <!-- <p>第二段第二段第二段第二段第二段第二段第二段第二段第二段第二段第二段第二段第二段第二段第二段第二段第二段</p> -->
+    <div class="position01">
+        <img src="./图片/200像素.png" alt="">
+        <div>
+            <img src="./图片/w100.png" alt="">
+        </div>
+    </div>
+    <!-- <p>第三段第三段第三段第三段第三段第三段第三段第三段第三段第三段第三段第三段第三段第三段第三段第三段第三段</p> -->
+    <!-- <p>第四段第四段第四段第四段第四段第四段第四段第四段第四段第四段第四段第四段第四段第四段第四段第四段第四段</p> -->
+</body>
+</html>

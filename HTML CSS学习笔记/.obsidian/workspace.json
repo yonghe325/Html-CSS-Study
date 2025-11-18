@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "50d5d80daecc8eaa",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7b8a7c07c5ad2b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97c849c5030c57a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTML + css/4.css特性 复合选择器 背景属性 显示模式/3. CSS特性.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3. CSS特性"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a434c71f0233d026",
+    "type": "split",
+    "children": [
+      {
+        "id": "f523e2595587b36b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bbcbbdc6200c1f0a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "152297a022de8510",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "e9682902faaf124e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "77d5ba0e98f1589f",
+    "type": "split",
+    "children": [
+      {
+        "id": "4fb8f0755376dc60",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03efdd115e8a420e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "HTML/基本骨架.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "基本骨架 的反向链接列表"
+            }
+          },
+          {
+            "id": "e9d26cac2b5cf523",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "HTML/基本骨架.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "基本骨架 的出链列表"
+            }
+          },
+          {
+            "id": "f794686d2645d575",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "27438120e3b99cd2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "HTML/基本骨架.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "基本骨架 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:创建新数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "97c849c5030c57a9",
+  "lastOpenFiles": [
+    "HTML + css/3.css初体验/1. 定义.md",
+    "HTML + css/4.css特性 复合选择器 背景属性 显示模式/4. Emmet写法.md",
+    "HTML + css/3.css初体验/2. 选择器/通配符选择器.md",
+    "HTML + css/3.css初体验/2. 选择器/id选择器.md",
+    "HTML + css/4.css特性 复合选择器 背景属性 显示模式/6. 显示模式.md",
+    "HTML + css/4.css特性 复合选择器 背景属性 显示模式/6.1 转换显示模式.md",
+    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/盒子模型常见问题/5. overflow 解决元素溢出问题.md",
+    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/盒子模型常见问题/6. 合并现象-外边距问题.md",
+    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/盒子模型常见问题/7. 内外边距问题-行内元素.md",
+    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/盒子模型常见问题/7. 塌陷问题-外边距问题.md",
+    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/3. 盒子尺寸计算.md",
+    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/4. 清除标签默认样式.md",
+    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/盒子模型属性.md",
+    "HTML + css/5.选择器 PxCook软件 盒子模型/选择器/结构伪类选择器.md",
+    "HTML + css/5.选择器 PxCook软件 盒子模型/选择器/伪元素选择器.md",
+    "HTML + css/5.选择器 PxCook软件 盒子模型/选择器/nth-child公式.md",
+    "HTML + css/4.css特性 复合选择器 背景属性 显示模式/1. 复合选择器.md",
+    "HTML + css/4.css特性 复合选择器 背景属性 显示模式/5. 背景属性.md",
+    "HTML + css/3.css初体验/6. 文本外观属性.md",
+    "HTML + css/3.css初体验/5. 文字控制属性.md",
+    "HTML + css/8. 定位 堆叠顺序 图标/字体图标.md",
+    "html.css图片/标签使用字体图标类名.png",
+    "html.css图片/引入字体样式表.png",
+    "html.css图片/图标库.png",
+    "HTML + css/8. 定位 堆叠顺序 图标/css精灵/实现步骤.md",
+    "HTML + css/8. 定位 堆叠顺序 图标/css精灵/原理.md",
+    "HTML + css/8. 定位 堆叠顺序 图标/堆叠层级/z-index.md",
+    "HTML + css/8. 定位 堆叠顺序 图标/css精灵",
+    "HTML + css/8. 定位 堆叠顺序 图标/定位/3. 绝对定位 absolute.md",
+    "HTML + css/8. 定位 堆叠顺序 图标/定位/2. 相对定位 relative.md",
+    "HTML + css/8. 定位 堆叠顺序 图标/堆叠层级",
+    "HTML + css/8. 定位 堆叠顺序 图标/定位/特殊位置",
+    "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas",
+    "html.css图片/父级不相对.png",
+    "html.css图片/子级绝对 父级相对.png",
+    "html.css图片/相对定位 盒子大小.png",
+    "html.css图片/相对定位.png",
+    "HTML + css/8. 定位 堆叠顺序 图标/定位",
+    "HTML + css/8. 定位 堆叠顺序 图标",
+    "Pasted image 20251017161147.png",
+    "css属性深究/margin为负值时/Pasted image 20251017161135.png",
+    "css属性深究/margin为负值时/Pasted image 20251017161116.png",
+    "css属性深究/margin为负值时",
+    "css属性深究",
+    "DAY02_HTML.docx",
+    "HTML + css/7. 网页开发规则",
+    "HTML + css/学成在线/图片"
+  ]
+}

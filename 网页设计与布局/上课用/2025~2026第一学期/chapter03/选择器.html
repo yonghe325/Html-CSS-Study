@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            text-align: center;
+            color: #f00;
+            font-weight: 700;
+            font-variant: normal;
+            font-style: italic;
+        }
+        
+        p{
+            font-size: 18px;
+            font-family: "微软雅黑";
+            color: blue;
+        }
+        /* p:nth-child(3){
+            color: #f60;
+        } */
+        
+        .size{
+            /* font-size: 25px; */
+            font: italic small-caps 700 25px/20px "微软雅黑","宋体";
+        }
+        
+        #ID{
+            text-decoration: underline;
+        }
+
+        #CO{
+            color: green;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        让优秀成为习惯!abc ABC abc
+    </h1>
+    <p id="ID">
+        让优秀成为习惯!
+
+    </p>
+    <p id="CO">
+        让优秀成为习惯!
+
+    </p>
+    <p class="size">
+        让优秀成为习惯!
+
+    </p>
+</body>
+</html>

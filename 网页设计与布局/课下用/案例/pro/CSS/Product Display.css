@@ -1,0 +1,156 @@
+/* 网页抬头 */
+.header{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 20px;
+
+    height: 50px;
+    color: #fff;
+
+    background-color: #000;
+}
+.header .ShangPinShangCheng{
+    font-weight: 700;
+    font-size: 35px;
+}
+.header .left{
+    display: flex;
+
+    font-size: 17px;
+}
+.header .To_head{
+    display: block;
+    margin: 10px 10px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 15px;
+
+
+    width: 50px;
+    height: 30px;
+    font-size: 17px;
+    color: #000;
+    background-color: #fff;
+}
+.header .Mine{
+    display: block;
+    margin: 10px 10px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 15px;
+
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    color: #fff;
+    background-color: #0916ff;
+}
+/* 网页内容 */
+/* 为网页主体添加背景线 */
+/* 背景线不会,网上抄的 */
+body::after {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      0deg,
+      black 0px,
+      black 1px,
+      transparent 1px,
+      transparent 100px
+    ),
+    linear-gradient(
+      90deg,
+      black 0px,
+      black 1px,
+      transparent 1px,
+      transparent 100px
+    );
+  background-size: 25px 25px;
+  opacity: 0.1;
+  z-index: -1;
+}
+/* 产品展示区 */
+.product_show{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100%;
+}
+.product_show>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px 30px;
+    padding: 15px;
+    border-radius: 15px;
+    border: #a1a1a1 2px solid;
+
+    width: 260px;
+    height: 360px;
+    background-color: #fff;
+}
+/* 产品展示区 内部 */
+/* 产品图片 */
+.prc{
+    margin-bottom: 5px;
+
+    height: 230px;
+
+    background-color: #000;
+}
+.prc img{
+    width: 226px;
+    height: 230px;
+}
+/* 产品名称,描述 */
+.description{
+    text-align: center;
+    height: 50px;
+    color: #0916ff;
+
+}
+.description p:nth-child(1){
+    font-size: 25px;
+    color: #000;
+    font-weight: 700;
+}
+.description p:nth-child(2){
+    font-size: 10px;
+    color: #6c6c6c;
+}
+/* 产品价格 */
+.product_link{
+    display: flex;
+    margin-top: 5px;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.product_link a:nth-child(1){
+    color: red;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+.product_link a:nth-child(2){
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+
+    text-align: center;
+    line-height: 28px;
+    font-size: 13px;
+    font-weight: 500;
+
+    background-color: blue;
+}
+
+
