@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>评论发送</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+      }
+      .doc {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+      }
+      .big {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        height: 70px;
+      }
+
+      .comment {
+        flex: 6;
+        position: relative;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .comment textarea {
+        padding: 2px 5px 0;
+        width: 100%;
+        height: 100%;
+        background-color: #edeaea;
+        border: 1px solid rgb(181, 181, 181);
+        outline: none;
+      }
+      .comment textarea:focus {
+        border-color: #318fec;
+      }
+
+      .comment p {
+        position: absolute;
+        bottom: -20px;
+        right: 10px;
+        text-align: right;
+      }
+      .but {
+        flex: 1;
+        outline: none;
+        border: 1px solid rgb(87, 86, 86);
+        background-color: #318fec;
+        color: white;
+        border-radius: 10%;
+        transition: ease-in 0.2s all;
+      }
+
+      .comment_release {
+        /* margin: 0 auto; */
+        width: 500px;
+        /* background-color: antiquewhite; */
+      }
+      .com_box {
+        display: flex;
+        width: 500px;
+        /* height: 70px; */
+        margin: 10px 0;
+        padding: 0 5px;
+      }
+      .com_box img {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+      }
+      .content_box {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 2px 0 0;
+        border-bottom: 1px solid rgb(230, 228, 228);
+      }
+      .uname {
+        flex: 1;
+        font-size: small;
+        color: rgba(255, 0, 0, 0.832);
+        font-weight: 600;
+        letter-spacing: 3px;
+      }
+      .content {
+        flex: 3;
+        /* line-height: 200%; */
+        width: 400px;
+        overflow-wrap: anywhere;
+      }
+      .rtime {
+        flex: 1;
+        font-size: x-small;
+        color: #c8c5c5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="doc">
+      <div class="big">
+        <div class="comment">
+          <textarea id="tt" placeholder="请输入"></textarea>
+          <p hidden>0/200</p>
+        </div>
+        <button type="submit" class="but">发送</button>
+      </div>
+      <div class="comment_release"></div>
+    </div>
+
+    <script>
+      (function tt_at() {
+        const tt = document.querySelector("#tt");
+        const p = document.querySelector(".comment p");
+        if (tt && p) {
+          tt.addEventListener("focus", function () {
+            p.hidden = false;
+          });
+          tt.addEventListener("blur", function () {
+            p.hidden = true;
+          });
+        }
+      })();
+      //文本域焦点事件
+      (function p_at() {
+        const tt = document.querySelector("#tt");
+        const p = document.querySelector(".comment p");
+        let count = 0;
+        tt.addEventListener("input", function () {
+          p.innerHTML = `${tt.value.length}/200`;
+        });
+      })();
+      //文本域value长度同步p
+      (function () {
+        const but = document.querySelector(".but");
+        const tt = document.querySelector("#tt");
+        const comment_release = document.querySelector(".comment_release");
+
+        but.addEventListener("click", function () {
+          if (tt.value.trim() !== '') {
+            comment_release.innerHTML += `
+            <div class="com_box">
+              <img src="../imgs/user_img.jpg" alt="" />
+              <div class="content_box">
+                <p class="uname">用户名</p>
+                <p class="content">${tt.value}</p>
+                <p class="rtime">${Date()}</p>
+              </div>
+            </div>
+            `;
+            tt.value = null;
+          }
+        });
+      })();
+      //按钮发布行为
+      (function () {
+        const tt = document.querySelector("#tt");
+        const comment_release = document.querySelector(".comment_release");
+        tt.addEventListener("keyup", function (e) {
+          if (e.key === "Enter" && tt.value.trim() !== '') {
+            comment_release.innerHTML += `
+              <div class="com_box">
+                <img src="../imgs/user_img.jpg" alt="" />
+                <div class="content_box">
+                  <p class="uname">用户名</p>
+                  <p class="content">${tt.value}</p>
+                  <p class="rtime">${Date()}</p>
+                </div>
+              </div>
+              `;
+            tt.value = null;
+          }
+        });
+      })();
+      //enter发送行为
+    </script>
+  </body>
+</html>

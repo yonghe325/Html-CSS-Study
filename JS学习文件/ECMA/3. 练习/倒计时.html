@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>倒计时</title>
+</head>
+<body>
+  <script>
+
+    let second = +prompt("请输入秒数")
+    for (let i = second; i >= 0; i--) {
+      let min = parseInt(i/60%60)
+      let h = parseInt(i/60/60)
+      s = i %60
+      document.write(`<span>${h}小时${min}分钟${s}秒</span></br>`)
+    }
+
+
+
+  </script>
+</body>
+</html>

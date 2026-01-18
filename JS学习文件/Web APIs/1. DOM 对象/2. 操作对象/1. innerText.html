@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>innerText</title>
+  </head>
+
+  <body>
+    <div class="box">我是文字内容</div>
+    <script>
+      //获取元素
+       const box = document.querySelector(".box");
+      //修改文字内容
+      box.innerText = `<strong>我是修改之后的文字</strong>`
+        //不会解析标签
+      console.log(box.innerText);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>柱形图</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0 auto;
+    }
+
+    .out {
+      display: flex;
+      flex-direction: column;
+      margin: 50px;
+
+      width: 1000px;
+      height: 600px;
+    }
+
+    .one {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+
+      width: 1000px;
+      height: 500px;
+
+      border-bottom: 2px solid rgb(68, 65, 65);
+      border-left: 2px solid rgb(68, 65, 65);;
+    }
+
+    .a {
+      position: relative;
+
+      width: 50px;
+      /* height: 100px; */
+      /* 数值 */
+
+      border: 2px solid pink;
+      background-color: pink;
+    }
+
+    .a>p {
+      position: absolute;
+      top: -25px;
+      left: 6px;
+    }
+    .a>h4{
+      position: absolute;
+      bottom: -25px;
+      left: -7px;
+      width: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <script>
+    let arr=[]
+    document.write(`      
+      <div class="out">
+        <div class="one">`)
+    for (let index = 0; index < 4; index++) {
+      arr[index] =  Number(prompt(`请输入第${index+1}季度的值`))
+      document.write(`
+          <div class="a" style="height: ${arr[index]}px;">
+            <p>${arr[index]}</p>
+            <h4>第${index+1}季度</h4>
+          </div>
+      `)
+    }
+    document.write(`
+          </div>
+      </div>
+    `)
+
+
+  </script>
+
+</body>
+
+</html>

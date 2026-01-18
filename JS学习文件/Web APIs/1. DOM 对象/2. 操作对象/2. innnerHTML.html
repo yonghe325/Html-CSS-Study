@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>innnerHTML</title>
+    <style>
+      div{
+        /* margin: 0 auto; */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>一等奖 : <span>???</span></h1>
+      <h3>二等奖 : <span>???</span></h3>
+      <h5>三等奖 : <span>???</span></h5>
+    </div>
+
+    <script>
+      let arr=['张三','李四','王五','zy']
+      let head = document.querySelectorAll('span')
+      console.log(head)
+      let ran_num
+      for (let index = 0; index < 3; index++) {
+          ran_num = Math.ceil(Math.random()*(4-index)-1)
+          console.log(ran_num)          
+          head[index].innerText = arr[ran_num]
+          arr.splice(ran_num,1)
+      }
+      
+
+    </script>
+  </body>
+</html>

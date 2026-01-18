@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tag切换</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+      }
+      .tag{
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        
+      }
+      .nav{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .sw span{
+        margin: 0 7px;
+        color: #4e4d4d;
+        font-weight: 600;
+        font-size: large;
+        cursor: pointer;
+      }
+      .nav .head h3{
+        font-size: 30px;
+      }
+      .sw span.hovered{
+        color: red;
+        font-weight: 700;
+        border-bottom: 3px solid red;
+      }
+      .content {
+        display: flex;
+        position: absolute;
+        top: 40px;
+        background-color: #eb8484;
+        height: 300px;
+        width: 500px;
+        visibility: hidden;
+        /* 先隐藏 */
+      }
+      .content.selected{
+        visibility: visible;
+      }
+
+
+</style>
+  </head>
+  <body>
+    <div class="tag">
+      <div class="nav">
+        <div class="head">
+          <h3>每日特价</h3>
+        </div>
+        <div class="sw">
+          <span class="hovered">精选</span>
+          <span>美食</span>
+          <span>百货</span>
+          <span>个护</span>
+          <span>预告</span>
+        </div>
+      </div>
+      <div class="content selected" style="background-color: rgb(0, 0, 255);">
+        <div class="left">
+          <img src="" alt="">
+        </div>
+        <div class="right">
+        </div>
+      </div>
+      <div class="content"  style="background-color: rgb(170, 0, 255);">
+        <div class="left">
+          <img src="" alt="">
+        </div>
+        <div class="right">
+        </div>
+      </div>
+      <div class="content"  style="background-color: rgb(255, 0, 0);">
+        <div class="left">
+          <img src="" alt="">
+        </div>
+        <div class="right">
+        </div>
+      </div>
+      <div class="content"  style="background-color: rgb(205, 255, 3);">
+        <div class="left">
+          <img src="" alt="">
+        </div>
+        <div class="right">
+        </div>
+      </div>
+      <div class="content"  style="background-color: rgb(0, 255, 0);">
+        <div class="left">
+          <img src="" alt="">
+        </div>
+        <div class="right">
+        </div>
+      </div>
+    </div>
+    <script>
+      ;(function () {
+        const span = document.querySelectorAll('.sw span')
+        span.forEach((element,index) => {
+          element.addEventListener('mouseenter',function () {
+            const h_ed = document.querySelector('.sw span.hovered').classList.remove('hovered')
+            this.classList.add('hovered')
+            console.log(index);
+            //取出下标
+            ;(function(){
+              const tag = document.querySelectorAll('.content')
+              const tag_vis = document.querySelector('.content.selected').classList.remove('selected')
+              tag[index].classList.toggle('selected')
+            })()
+            //切换tag
+          })
+        });
+      })()
+      //tag
+
+    </script>
+  </body>
+</html>

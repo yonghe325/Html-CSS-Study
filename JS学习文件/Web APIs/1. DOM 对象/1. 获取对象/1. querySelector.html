@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>querySelector</title>
+</head>
+<body>
+  <div class="box">box</div>
+  <div id="nav">nav</div>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+  <script>
+    //获取第一个div标签
+    const div =  document.querySelector('div')
+    //获取class为box的标签
+    const box =  document.querySelector('.box')
+    //获取id为nav的标签
+    const nav = document.querySelector('#nav')
+    //获取ul中第一个li
+    const li_1=document.querySelector('ul li:first-child')
+
+    console.log(div)
+    console.log(box)
+    console.log(nav)
+    console.log(li_1)
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation-duration</title>
+  <style>
+    img {
+      width: 200px;
+      animation: mymove;
+      animation-duration: 5s;
+      animation-iteration-count: 5;
+    }
+
+    @keyframes mymove {
+
+      0% {
+        transform: translate(0) rotateY(180deg);
+      }
+
+      25% {
+        transform: translate(500px) rotateY(180deg);
+      }
+
+      25.1% {
+        transform: translate(500px) rotateY(0deg);
+      }
+
+      50% {
+        transform: translate(0px) rotateY(0deg);
+      }
+
+      50.1% {
+        transform: translate(0px) rotateY(180deg);
+      }
+
+      75% {
+        transform: translate(1000px) rotateY(180deg);
+      }
+
+      75.1% {
+        transform: translate(1000px) rotateY(0deg);
+      }
+
+      99% {
+        transform: translate(0) rotateY(0deg);
+      }
+
+      100% {
+        transform: translate(0) rotateY(180deg);
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <img src="./people.gif" alt="">
+</body>
+
+</html>

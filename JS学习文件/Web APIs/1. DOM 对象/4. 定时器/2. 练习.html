@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>客户许可</title>
+</head>
+<body>
+  <textarea name="" id="" cols="30" rows="10">
+    这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字
+    这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字
+    这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字
+    这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字
+  </textarea>
+  <br>
+  <button class="sbt" disabled data-time="5" type="submit">我已经同意(5)</button>
+
+  <script>
+    const sbt = document.querySelector('.sbt')
+    // console.log(sbt.innerHTML);
+    // console.log(sbt.dataset.time);
+    
+    let i = 20
+    let swift = setInterval(function(){
+      sbt.dataset.time--
+      sbt.innerHTML=`我已经同意(${sbt.dataset.time})`
+      if (sbt.dataset.time == 0) {
+        clearInterval(swift)
+        sbt.innerHTML = `我已经同意`
+        sbt.disabled = false
+      }
+    },1000)
+
+  </script>
+
+</body>
+</html>

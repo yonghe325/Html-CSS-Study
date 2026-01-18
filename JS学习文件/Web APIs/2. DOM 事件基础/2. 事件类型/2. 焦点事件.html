@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下拉搜索框</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+    }
+    .se{
+      margin: 0 auto;
+      position: relative;
+      top: 30px;
+      width: 200px;
+      height: 200px;
+    }
+    #s{
+      width: 200px;
+      height: 25px;
+      border: 1px solid rgb(246, 222, 37);
+
+    }
+    #s:focus{
+      border: 1px solid rgb(222, 135, 22);
+      outline: none;
+    
+    }
+    .result-list{
+      border: 1px solid rgb(246, 222, 37);
+      border-top: none;
+    }
+    .result-list li{
+      height: 25px;
+      padding-left: 10px;
+      /* border: 1px solid rgb(246, 222, 37); */
+    }
+    .result-list li:hover{
+      background-color: rgb(166, 165, 165);
+    }
+    .result-list li>a{
+      color: rgb(128, 127, 126);
+      font-weight: 400;
+      text-decoration: none;
+    }
+    
+
+</style>
+</head>
+<body>
+  <div class="se">
+    <input type="search" placeholder="小米笔记本" name="" id="s">
+    <ul class="result-list" hidden>
+      <li><a href="#">商品1</a></li>
+      <li><a href="#">商品2</a></li>
+      <li><a href="#">商品3</a></li>
+      <li><a href="#">商品4</a></li>
+      <li><a href="#">商品5</a></li>
+      <li><a href="#">商品6</a></li>
+      <li><a href="#">商品7</a></li>
+    </ul>
+  </div>
+  <script>
+    (function(){
+      const input = document.querySelector('#s')
+      const ul = document.querySelector('.result-list')
+      input.addEventListener('focus',function(){
+        ul.hidden = false
+      })
+      input.addEventListener('blur',function(){
+        ul.hidden = true
+      })
+    })()
+  </script>
+</body>
+</html>

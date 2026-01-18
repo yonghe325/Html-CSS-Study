@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单</title>
+</head>
+<body>
+  <!-- <input type="text" value="电脑"> -->
+  <input type="checkbox" name="" id="">
+  <script>
+    // // 1. 获取元素
+    const uname = document.querySelector('input')
+    // // 2. 获取值 获取表单里面的值 使用value
+    // console.log(uname.value);
+    // // 3. 设置值
+    // uname.value = '设置之后的值'
+    // console.log(uname.value);
+    // // 4. 修改表单的type属性
+    // uname.type = 'password'
+      //可以通过设置事件, 绑定按钮, 实现type的切换 
+    //5. 对于所有键和值相等的属性, 使用 true/ false切换, 默认是false
+    // uname.disabled = true // 是否不可修改
+    uname.checked = true // 默认选择(对于单选或者多选)
+  </script>
+</body>
+</html>

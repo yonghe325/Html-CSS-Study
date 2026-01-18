@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>九九乘法表</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    body{
+      margin: 0 auto;
+    }
+    span{
+      display: inline-block;
+      margin: 3px 5px;
+
+      width: 100px;
+      height: 30px;
+      border-radius: 10%;
+      border: 2px solid rgb(238, 101, 124);
+      background-color: rgb(242, 159, 173);
+
+      font-size: large;
+      font-weight: 600;
+      text-align: center;
+      line-height: 30px;
+    }
+    .multiplement{
+      margin: 0 auto;
+
+      width: 1200px;
+      height: 600px;
+    }
+
+  </style>
+
+</head>
+<body>
+  
+
+  <script>
+    function Print_multiplement(param) {
+      document.write(`<div class="multiplement">`)
+      for (let i = 1; i < 10; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.write(`<span>${i} * ${j} = ${j*i}</span>`)
+          //打印
+        }
+        document.write('</br></br>')
+        //换行
+      }
+      document.write(`</div>`)      
+    }
+    Print_multiplement()
+    Print_multiplement()
+    Print_multiplement()
+
+
+  </script>
+</body>
+</html>

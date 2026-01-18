@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 400px;
+      height: 100px;
+      background-color: red;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    div:hover {
+      border-radius: 50px;
+      text-align: center;
+      line-height: 100px;
+
+      background-color: blue;
+      font-weight: 100;
+      font-family: "宋体";
+
+
+
+      transition-property: margin, background-color, font-weight, font-family, border-radius, text-align;
+      transition-duration: 10s;
+      transition-delay: 2s;
+      /* transition-timing-function: ease; */
+      /* transition-timing-function: ease-in; */
+      transition-timing-function: in-out;
+      /* transition-timing-function: ease-out; */
+      /* transition-timing-function: linear; */
+
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>
+      使用transition_property 属性改变元素背景色
+    </p>
+  </div>
+</body>
+
+</html>

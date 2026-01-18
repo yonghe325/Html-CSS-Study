@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>获取事件对象</title>
+    <style>
+      .color{
+        background-color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button type="button">按钮</button>
+    <ul>
+      <li><button type="button">111</button></li>
+      <li><button type="button">222</button></li>
+      <li><button type="button">333</button></li>
+      <li><button type="button">444</button></li>
+      <li><button type="button">555</button></li>
+    </ul>
+    <input type="text">
+    <script>
+      ;(function () {
+        const but = document.querySelector("ul");
+        but.addEventListener("click", function (event) {
+          console.log(event);
+          console.log(event.type);
+          console.log(event.clientX);
+          console.log(event.clientY);
+          console.log(event.offsetX);
+          console.log(event.offsetY);
+          console.log(event.key);
+        });  
+      })()
+      ;(function () {
+        const tt = document.querySelector('input')
+        tt.addEventListener('keyup',function (e) {
+          // console.log(e);
+          if (e.key === 'Enter') {
+            console.log('按的回车');
+          }
+        })
+      })()
+
+    </script>
+  </body>
+</html>

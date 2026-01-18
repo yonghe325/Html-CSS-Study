@@ -1,0 +1,7 @@
+.list>li{
+    list-style: none;
+    height: 26px;
+    line-height: 26px;
+    background: url(./book.png) no-repeat left center;
+    padding-left: 25px;
+}

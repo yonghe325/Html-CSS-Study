@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尝试打印一个表格</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        table{
+            text-align: center;
+
+            width: 1000px;
+            height: 150px;
+            border: 2px solid black;
+        }
+        tr{
+            border: 2px solid black;
+        }
+        tr::nth-child(1){
+            font-size: larger;
+        }
+        td{
+            border: 2px solid black;
+            font-weight: 700;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+    <h1>
+        这是表格的标题
+    </h1>
+
+
+    <script>
+        let name = prompt('输入名称 : ')
+        let price = +prompt('输入价格 ')
+        let num = +prompt('输入数量 : ')
+        let all_price = num*price
+        let add = prompt('请输入地址 : ')
+        document.write(`    
+            <table>
+                <tr>
+                    <td>商品名称</td>
+                    <td>商品价格</td>
+                    <td>商品数量</td>
+                    <td>总价</td>
+                    <td>收货地址</td>
+                </tr>
+                <tr>
+                    <td>${name}</td>
+                    <td>${price}</td>
+                    <td>${num}</td>
+                    <td>${all_price}</td>
+                    <td>${add}</td>
+                </tr>
+            </table>
+        `)
+
+    </script>
+
+</body>
+</html>
