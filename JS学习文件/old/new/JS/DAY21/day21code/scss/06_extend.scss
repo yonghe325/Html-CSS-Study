@@ -1,0 +1,24 @@
+.box1 {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+}
+.box2 {
+	@extend .box1;
+	border-radius:10px;
+}
+.box3 {
+	@extend .box2,.box4;
+	color: #fff;
+}
+.box4 {
+	font-size: 12px;
+}
+
+%juxing {
+	width: 120px;
+	height: 40px;
+}
+.box5 {
+	@extend %juxing;
+}

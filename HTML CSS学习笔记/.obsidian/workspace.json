@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "97c849c5030c57a9",
+            "id": "e88325452d6521c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML + css/6. 标准流 浮动 Flex布局/排布规则/Flex/Flex属性.md",
-                "mode": "preview",
+                "file": "NEW JS/5. 基本引用类型/3. 原始值包装类型/4. String.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flex属性"
+              "title": "4. String"
             }
           }
         ]
@@ -35,25 +35,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bbcbbdc6200c1f0a",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "文件列表"
-            }
-          },
-          {
             "id": "152297a022de8510",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,12 +60,26 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "bbcbbdc6200c1f0a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 200
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -94,8 +95,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HTML/基本骨架.md",
-                "collapseAll": false,
+                "file": "NEW JS/4. 第四章 变量, 作用域与内存/2. 执行上下文 与 作用域/2. 上下文概念.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "基本骨架 的反向链接列表"
+              "title": "2. 上下文概念 的反向链接列表"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HTML/基本骨架.md",
+                "file": "NEW JS/4. 第四章 变量, 作用域与内存/2. 执行上下文 与 作用域/2. 上下文概念.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "基本骨架 的出链列表"
+              "title": "2. 上下文概念 的出链列表"
             }
           },
           {
@@ -142,21 +143,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML/基本骨架.md",
+                "file": "NEW JS/5. 基本引用类型/3. 原始值包装类型/4. String.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "基本骨架 的大纲"
+              "title": "4. String 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 277.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,54 +170,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "97c849c5030c57a9",
+  "active": "e88325452d6521c9",
   "lastOpenFiles": [
-    "HTML + css/6. 标准流 浮动 Flex布局/排布规则/Flex/FLEX布局.md",
-    "HTML + css/4.css特性 复合选择器 背景属性 显示模式/6. 显示模式.md",
-    "HTML + css/4.css特性 复合选择器 背景属性 显示模式/4. Emmet写法.md",
-    "HTML + css/4.css特性 复合选择器 背景属性 显示模式/5. 背景属性.md",
-    "HTML + css/6. 标准流 浮动 Flex布局/排布规则/Flex/Flex属性.md",
-    "HTML + css/5.选择器 PxCook软件 盒子模型/选择器/nth-child公式.md",
-    "HTML + css/5.选择器 PxCook软件 盒子模型/选择器/结构伪类选择器.md",
-    "HTML + css/5.选择器 PxCook软件 盒子模型/选择器/伪元素选择器.md",
-    "HTML + css/4.css特性 复合选择器 背景属性 显示模式/2. 伪类选择器.md",
-    "HTML + css/4.css特性 复合选择器 背景属性 显示模式/1. 复合选择器.md",
-    "HTML + css/6. 标准流 浮动 Flex布局/排布规则/Flex/组成.md",
-    "HTML + css/8. 定位 堆叠顺序 图标/定位/4. 固定定位 fixed.md",
-    "HTML + css/8. 定位 堆叠顺序 图标/定位/1. 作用.md",
-    "HTML + css/8. 定位 堆叠顺序 图标/定位/2. 相对定位 relative.md",
-    "HTML + css/8. 定位 堆叠顺序 图标/定位/3. 绝对定位 absolute.md",
-    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/2. 组成.md",
-    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/3. 盒子尺寸计算.md",
-    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/4. 清除标签默认样式.md",
-    "HTML + css/5.选择器 PxCook软件 盒子模型/盒子模型/盒子模型属性.md",
-    "HTML + css/2. 第二部分/1.3表单/select下拉选择菜单标签.md",
-    "HTML + css/2. 第二部分/1.3表单/label标签.md",
-    "HTML + css/2. 第二部分/1.3表单/textarea文本域标签.md",
-    "HTML + css/2. 第二部分/1.2表格.md",
-    "HTML + css/2. 第二部分/3. 字符实体.md",
-    "HTML + css/2. 第二部分/2 div,sqan无语义布局标签.md",
-    "HTML + css/2. 第二部分/1列表,表格,表单.md",
+    "NEW JS/5. 基本引用类型/0.1 toLocaleString()、toString()和 valueOf() 与 重写.md",
+    "NEW JS/5. 基本引用类型/3. 原始值包装类型/4. String.md",
+    "NEW JS/5. 基本引用类型/3. 原始值包装类型/3. Number.md",
+    "NEW JS/5. 基本引用类型/3. 原始值包装类型/2. Boolean.md",
+    "NEW JS/5. 基本引用类型/3. 原始值包装类型/1. 原始值包装引用类型.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/5. RegExp实例方法.md",
+    "NEW JS/5. 基本引用类型/3. 原始值包装类型",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/6. RegExp构造函数属性.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/4. RegExp实例属性.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/7. 标志.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/1. RegExp类型.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/1. 正则语法.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/3. RegExp构造函数定义.md",
+    "html.css图片/Pasted image 20260208172614.png",
+    "NEW JS/5. 基本引用类型/0. 概念.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/0. 正则表达式.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/2. RegExp字面量形式定义.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/6. 断言.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/2. 字符集.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/SEO/基本语法.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/4. 分组 分支 转义.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/5. 定位.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/SEO",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/3. 重复.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式",
+    "NEW JS/5. 基本引用类型/1. Date类型/3. 日期组件方法.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型",
+    "NEW JS/5. 基本引用类型/1. Date类型/2. 日期格式化方法.md",
+    "JS 术语.md",
+    "NEW JS/5. 基本引用类型/1. Date/2. 继承的方法.md",
+    "NEW JS/5. 基本引用类型/0.1 toLocaleString() + toString() + valueOf()方法.md",
+    "NEW JS/5. 基本引用类型/1. Date类型",
+    "NEW JS/5. 基本引用类型",
+    "NEW JS/4. 第四章 变量, 作用域与内存/3. 垃圾回收",
+    "NEW JS/4. 第四章 变量, 作用域与内存/2. 执行上下文 与 作用域",
+    "JavaScript学习笔记/xpicture/Pasted image 20260127111020.png",
+    "JavaScript学习笔记/xpicture/Pasted image 20260127111000.png",
+    "NEW JS/4. 第四章 变量, 作用域与内存/1. 原始值与引用值",
+    "JavaScript学习笔记/xpicture/Pasted image 20260126185516.png",
+    "JavaScript学习笔记/xpicture/Pasted image 20260122175339.png",
     "html.css图片/标签使用字体图标类名.png",
     "html.css图片/引入字体样式表.png",
     "html.css图片/图标库.png",
-    "HTML + css/8. 定位 堆叠顺序 图标/css精灵",
-    "HTML + css/8. 定位 堆叠顺序 图标/堆叠层级",
-    "HTML + css/8. 定位 堆叠顺序 图标/定位/特殊位置",
     "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas",
     "html.css图片/父级不相对.png",
-    "html.css图片/子级绝对 父级相对.png",
-    "html.css图片/相对定位 盒子大小.png",
-    "html.css图片/相对定位.png",
-    "HTML + css/8. 定位 堆叠顺序 图标/定位",
-    "HTML + css/8. 定位 堆叠顺序 图标",
-    "Pasted image 20251017161147.png",
-    "css属性深究/margin为负值时/Pasted image 20251017161135.png",
-    "css属性深究/margin为负值时/Pasted image 20251017161116.png",
-    "css属性深究/margin为负值时",
-    "css属性深究",
-    "DAY02_HTML.docx",
-    "HTML + css/7. 网页开发规则",
-    "HTML + css/学成在线/图片"
+    "html.css图片/子级绝对 父级相对.png"
   ]
 }

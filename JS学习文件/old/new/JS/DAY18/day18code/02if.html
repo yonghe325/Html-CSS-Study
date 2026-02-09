@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>if结构</title>
+	</head>
+	<body>
+		<script>
+			//声明变量保存商品的总价total
+			//判断总价是否满30，满30减15，否则原价支付，输出最终的支付价格 
+			/* var total = 5
+			if(total>=30){//判断条件
+				total -= 15 //小括号里的条件结果为true,执行此处代码，否则跳过
+			}
+			console.log(total) */
+			
+			//练习:声明变量保存商品的总价total
+			//如果总价在1000~2000之间，总价打9折，并输出‘恭喜您!获得赠品洗发水*1’
+			//如果总价不在规定范围，则原价支付，输出:'您应支付:XXX元'
+			var total = 1000
+			if(total>=1000 && total<=2000){
+				total *= 0.9
+				console.log('恭喜您!获得赠品洗发水*1')
+			}
+			console.log('您应支付:'+total+'元')
+		</script>
+	</body>
+</html>

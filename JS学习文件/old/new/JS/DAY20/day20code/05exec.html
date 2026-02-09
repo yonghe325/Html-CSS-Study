@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>作用域练习</title>
+		<style>
+			div {
+				width: 100px;
+				height: 28px;
+				background-color: lightgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<button id="btn1">变长</button>
+			<button id="btn2">变短</button>
+		</div>
+		<script>
+			//定义全局变量，保存宽度,这样两个点击事件共享一个值
+			var a = 100
+			//给变长按钮绑定点击事件
+			btn1.onclick = function(){
+				a += 5//每次点击，宽度+5
+				//将自增后的宽度赋值给div的宽度，注意拼接单位px
+				box.style.width = a +'px'
+			}
+			//给变短按钮绑定点击事件
+			btn2.onclick = function(){
+				a -=5 //每次点击，宽度-5
+				//将自减后的宽度赋值给div的宽度，注意拼接单位px
+				box.style.width = a+'px'
+			}
+		</script>
+	</body>
+</html>

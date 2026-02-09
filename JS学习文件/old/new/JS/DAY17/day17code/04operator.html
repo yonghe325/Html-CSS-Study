@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>逻辑运算符</title>
+	</head>
+	<body>
+		<script>
+			/** 测试与: 全真才真 **/
+			console.log('测试与:')
+			console.log(true && false)//false
+			console.log(false && true)//false 可以短路
+			console.log(false && false)//false 可以短路
+			console.log(true && true)//true
+			
+			/** 测试或: 全假才假 **/
+			console.log('测试或:')
+			console.log(true || false)//true 可以短路
+			console.log(false || true)//true
+			console.log(true || true)//true 可以短路
+			console.log(false || false)//false
+			
+			//练习:判断一个人的工资salary是否在8000~10000之间
+			var salary = 9000
+			console.log(salary>=8000 && salary<=10000)
+			
+			//练习:声明变量保存用户的 用户名user和密码pwd
+			//如果用户名是admin并且密码是123456,输出true,否则输出false
+			var user = 'admin'
+			var pwd = '123456'
+			console.log(user === 'admin' && pwd==='123456')
+			
+			//练习:判断一个人的年龄是否在60以上或者是12以下
+			var age = 98
+			console.log(age>60 || age<12)
+			
+			//练习:声明变量保存用户输入的值input,如果是用户名xin888
+			//或者是邮箱xin@qq.com,或者是手机号码18811112222输出true,否则输出false
+			var input = '18811112222'
+			console.log(input==='xin888' || input==='xin@qq.com' || input==='18811112222')
+			
+			//请问:下列程序运行是否会报错
+			var n = 5
+			//n>3 && a //前面为true,没有短路,会执行后面的内容,a没定义,报错
+			n<8 || a //不报错，前面为true,短路，不会执行后面的代码
+			
+			//逻辑非 取反
+			console.log(!true) //false
+			console.log(!false) //true
+		</script>
+	</body>
+</html>

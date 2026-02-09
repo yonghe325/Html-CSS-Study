@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数据类型转换transform-隐式转换</title>
+	</head>
+	<body>
+		<script>
+			var n1 = 2 + '3'//先把数字2转为字符串2，再执行字符串的拼接
+			console.log(n1,typeof n1)//23，string
+			var n2 = 2 + false//布尔型转为数字0
+			console.log(n2,typeof n2)//2,'number'
+			var n3 = 2 + true//布尔型转为数字1
+			console.log(n3,typeof n3)//3,'number'
+			var n4 = '2' + true//布尔型转为字符串
+			console.log(n4,typeof n4)//2true string
+			
+			//字符串的拼接
+			var pname = 'Apple'
+			var os = 'MacOS'
+			console.log('商品名称:'+pname+',系统:'+os)
+			
+			//练习:定义变量用来保存员工的姓名name与生日birthday
+			//打印输入以下格式 员工姓名:xxx,出生日期:xxx
+			var name = '小新'
+			var birthday = '1983-7-15'
+			console.log('员工姓名:'+name+',出生日期:'+birthday)
+			
+			var m1 = '3' - '2'//3-2=1
+			var m2 = '3' * false //3*0=0
+			var m3 = true / '2' //1/2=0.5
+			var m4 = '3a'- 2 //NaN(Not a Number)
+			var m5 = 3 + undefined //NaN
+			var m6 = 1 - null //1-0=1
+			console.log(m1,m2,m3,m4,m5,m6)
+			
+			//NaN和任何数字执行数学运算的结果都是NaN
+			console.log(NaN-2,NaN+3,NaN*8,NaN/2)
+		</script>
+	</body>
+</html>

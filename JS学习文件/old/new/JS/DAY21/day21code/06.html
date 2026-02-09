@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>检测数据中是否含有非数字</title>
+	</head>
+	<body>
+		<script>
+			//系统函数: JS提供的函数
+			//isNaN()用于检测数据中是否含有非数字，有->true 没有->false
+			console.log(isNaN('1a'))//true
+			console.log(isNaN('a'))//true
+			console.log(isNaN(NaN))//true
+			console.log(isNaN(undefined))//true
+			console.log(isNaN(null))//false
+			console.log(isNaN(true))//false
+			console.log(isNaN(false))//false
+			console.log(isNaN(666))//false
+		</script>
+	</body>
+</html>

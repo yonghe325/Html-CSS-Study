@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>斐波那契数列递归答案</title>
+	</head>
+	<body>
+		<script>
+			function fi(n){
+				if(n===1 || n===2){
+					return 1
+				}else {
+					return fi(n-1)+fi(n-2)
+				}
+			}
+			console.log(fi(10))
+		</script>
+	</body>
+</html>

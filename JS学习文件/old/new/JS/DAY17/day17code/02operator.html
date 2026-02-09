@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>算术运算符</title>
+	</head>
+	<body>
+		<script>
+			//1.测试取余
+			console.log(25%10)//商为2,余数为5
+			console.log(7%3)//商为2,余数为1
+			console.log(3%7)//商为0,余数为3
+			var n = 8
+			console.log(n%2)//对2取余，余数为0，可以判断为偶数
+			
+			//2.测试自增自减运算符
+			var a = 2
+			a++
+			console.log(a)//3 遇到++变量的值+1
+			++a
+			console.log(a)//4 又遇到++变量的值+1
+			
+			var b = 3
+			var c = b++ //符号在后，先把b的值3赋值给c,b再自增
+			console.log(b,c)//4,3
+			
+			var d = 3
+			var e = ++d//符号在前，d先自增，然后再把自增的结果赋值给e
+			console.log(d,e)//4,4
+			
+			//练习题:
+			var m1 = 7
+			var m2 = m1--
+			var m3 = --m1
+			console.log(m1,m2,m3)//5,7,5
+			
+			//3.隐式转换
+			var x = '3' 
+			x++//隐式转换底层默认会调用Number('3')=3
+			console.log(x)//4
+			
+			console.log('7a'%'3')//NaN
+			//console.log(Number('7a'))//NaN
+		</script>
+	</body>
+</html>

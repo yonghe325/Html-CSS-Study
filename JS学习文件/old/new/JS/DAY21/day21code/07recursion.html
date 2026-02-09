@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>递归recursion</title>
+	</head>
+	<body>
+		<script>
+			//创建函数f,传递数字，求该数字的阶乘结果
+			//5! = 5*4*3*2*1
+			//4! = 4*3*2*1
+			//3! = 3*2*1
+			//2! = 2*1
+			//1!=1 1的阶乘是1--公式
+			//递归: 
+			//1.总结规律  f(n) = n*f(n-1)
+			//2.最简问题  1!=1 也就是f(1)=1
+			function f(n){//求数字n的阶乘结果
+				if(n===1){//最简问题
+					return 1//1的阶乘结果就是1
+				}else{
+					return n*f(n-1)//找到的规律
+					//递归:在方法内部自己调用自己
+				}
+			}
+			console.log(f(5))
+		</script>
+	</body>
+</html>

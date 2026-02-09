@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>录入信息</title>
+  <style>
+    /* new */
+    .new {
+      text-align: center;
+    }
+
+    .new h1 {
+      margin: 30px 0;
+    }
+
+    .new input,
+    .new select {
+      width: 50px;
+      margin-right: 20px;
+    }
+
+    /* information */
+    .information {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .information table {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+
+    .information table th {
+      width: 100px;
+      height: 30px;
+      border: 2px solid rgb(191, 193, 194);
+      background-color: rgb(173, 227, 236);
+      ;
+      font-weight: 300;
+    }
+
+    .information table td {
+      width: 100px;
+      height: 30px;
+      border: 2px solid rgb(191, 193, 194);
+      font-weight: 300;
+      text-align: center;
+
+    }
+
+    .delete {
+      border: none;
+      background-color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="new">
+    <h1>新增学员</h1>
+    <form accept="" id="form">
+      <label for="name'">姓名 : </label>
+      <input type="text" name="name" id="">
+
+      <label for="age">年龄 : </label>
+      <input type="text" name="age" id="">
+
+      <label for="gender">性别 : </label>
+      <select name="gender" id="">
+        <option value="man">男</option>
+        <option value="weman">女</option>
+      </select>
+
+      <label for="salary">薪资 : </label>
+      <input type="text" name="salary" id="">
+
+      <label for="add">地址</label>
+      <select name="add" id="">
+        <option value="1">北京</option>
+        <option value="2">天津</option>
+      </select>
+
+      <input type="button" value="录入" id="in">
+    </form>
+  </div>
+
+  <div class="information">
+    <h1>就业榜</h1>
+    <table id="table">
+      <tr>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+        <th>薪资</th>
+        <th>就业城市</th>
+        <th>操作</th>
+      </tr>
+      <!-- <tr>
+        <td>a</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><input type="button" value="delete" class="delete"></td>
+      </tr> -->
+    </table>
+  </div>
+  <script>
+    (function () {
+      const but = document.querySelector('#in').addEventListener('click', function (e) {
+        const form = document.querySelector('#form')
+        const table = document.querySelector('#table')
+        const tr = table.children[0].cloneNode(false)
+        if (form[0].value && form[1].value && form[3]) {
+          tr.innerHTML = `
+          <td>${table.childElementCount}</td>
+          <td>${form[0].value}</td>
+          <td>${form[1].value}</td>
+          <td>${form[2].options[form[2].selectedIndex].innerHTML}</td>
+          <td>${form[3].value}</td>
+          <td>${form[4].options[form[4].selectedIndex].innerHTML}</td>
+          <td><input type="button" value="delete" class="delete"></td>
+        `
+          table.appendChild(tr)
+          form[0].value = null
+          form[1].value = null
+          form[3].value = null
+        }
+        else {
+          alert('no')
+        }
+        const dt = document.querySelector('.delete').addEventListener('click',function(e){
+        console.log(this.parentNode.parentNode.children[0]);
+        
+      })
+      })
+
+    })();
+
+  </script>
+</body>
+
+</html>

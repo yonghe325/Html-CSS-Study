@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>if-else语句</title>
+	</head>
+	<body>
+		<script>
+			var age = 113
+			if(age>18){
+				console.log('成年人')
+			}else{
+				console.log('未成年人')
+			}
+			
+			//练习:声明变量保存数字num,判断是奇数还是偶数，并输出:'XXX是X数'
+			var num = 17
+			if(num%2===0){
+				console.log(num+'是偶数')
+			}else {
+				console.log(num+'是奇数')
+			}
+			//练习:声明变量保存用户名name和密码pwd
+			//如果用户名是root且密码是123456，输出'登录成功',反之输出'登录失败'
+			var name = 'root'
+			var pwd = '123456'
+			if(name==='root' && pwd==='123456'){
+				console.log('登录成功!')
+			}else{
+				console.log('登录失败!')
+			}
+			//练习:声明变量保存一个人的性别gender(值是1或者是0)
+			//对性别进行判断:如果是1打印'男',否则打印'女'
+			//要求:使用if-else和三目运算符两种方式实现
+			var gender = 1
+			if(gender){
+				console.log('男')
+			}else{
+				console.log('女')
+			}
+			console.log(gender?'男':'女')
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>匿名函数</title>
+	</head>
+	<body>
+		<script>
+			//之前创建函数的方式--函数声明
+			function fn() {} //函数是有名字的fn
+			fn() //调用有名字的函数
+
+			//创建匿名函数--函数表达式
+			//把匿名函数赋值给一个变量，变量名称就是函数名称
+			var fun = function() {
+				console.log('我是一个匿名函数')
+			}
+			fun() //通过变量名fun调用匿名函数
+			console.log(typeof fun) //function 函数类型
+			console.log(typeof fn) //function 函数类型
+			console.log(fun)
+			//fun变量保存了函数的全部内容: (){console.log('我是一个匿名函数')}
+			console.log(fn) //函数名称其实就是一个变量，用来保存函数的全部内容
+
+			//练习:使用函数表达式的方式创建函数getSum()
+			//传递任意两个数字，返回这两者之间所有整数的和
+			//要求:这两个实参是无序的，可能存在前面数大于后面数的情况
+			var getSum = function(n1, n2) {
+				//如果收到的实参n1>n2,我们可以交换这两个变量的值
+				if(n1>n2){
+					var c = n1 //准备第3个变量c协助交换
+					n1 = n2 
+					n2 = c
+				}
+				for (var i = n1,sum=0; i <= n2; i++) {
+					sum += i
+				}
+				return sum//等循环结束后，将最终累加的结果返回
+			}
+			console.log( getSum(1000,100) )
+		</script>
+	</body>
+</html>

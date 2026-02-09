@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS常量练习const</title>
+	</head>
+	<body>
+		<script>
+			//1.声明常量
+			const a = 2
+			console.log(a)
+			//2.常量的值不允许被修改
+			//a = 3 //TypeError: Assignment to constant variable.
+			//3.常量定义时必须赋值
+			//const b //SyntaxError: Missing initializer in const declaration
+				
+			//4.练习：声明常量pi用于保存圆周率值3.14
+			//声明变量用于保存圆的半径r、周长length、面积area
+			//计算并输出结果
+			var r = 5
+			const pi = 3.14
+			//计算面积
+			var area = pi*r*r
+			//计算周长
+			var length = 2*pi*r*100/100 //31.400000000000002存在精度丢失的现象
+			console.log(area,length)
+		</script>
+	</body>
+</html>

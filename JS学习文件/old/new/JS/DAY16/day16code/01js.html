@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS的两种书写方式</title>
+	</head>
+	<body>
+		<!-- JS的写法1:内部写法 -->
+		<script>
+			//在控制台打印输出hello world
+			//注意:hello world要加引号，推荐单引号
+			console.log('hello world')
+			//运行结果要在浏览器控制台console中看,HTML页面上是看不到的
+		</script>
+		
+		<!-- 创建01.js 内容：console.log('welcome WEBTN2209') -->
+		<!-- JS的写法2: 引入外部的JS文件 -->
+		<!-- 注意:如果script标签已经用于引入外部的js文件，里面的代码是不执行的 -->
+		<script src="01.js">
+			console.log('666')
+		</script>
+	</body>
+</html>

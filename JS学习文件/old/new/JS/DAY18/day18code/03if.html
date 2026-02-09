@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>if结构2</title>
+	</head>
+	<body>
+		搜索关键字<input type="text" id="kw">
+		<script>
+			//给输入框绑定失去焦点事件
+			kw.onblur = function(){
+				console.log('失去光标')
+				//获取用户输入的值
+				var v = kw.value
+				//判断用户输入的值是否为空
+				//只有当v的值转为布尔是false的时候，也就是!false=true,符合if的判断条件
+				//才能进到大括号里，执行弹窗的代码，比如v是''
+				if(!v){
+					alert('关键字不能为空!')
+				}
+			}
+			
+			/* if(!true){
+				console.log('ok')
+			}
+			// 0 NaN '' undefined null 这5个值转为布尔全为false
+			if(''){//false,不符合条件，所以不打印
+				console.log('内容')
+			}
+			if(!''){//!false=true 符合条件，所以打印
+				console.log('内容')
+			} */
+		</script>
+	</body>
+</html>

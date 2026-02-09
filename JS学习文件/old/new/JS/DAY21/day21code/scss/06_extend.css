@@ -1,0 +1,17 @@
+.box1, .box2, .box3 {
+  width: 200px;
+  height: 200px;
+  background-color: red; }
+
+.box2, .box3 {
+  border-radius: 10px; }
+
+.box3 {
+  color: #fff; }
+
+.box4, .box3 {
+  font-size: 12px; }
+
+.box5 {
+  width: 120px;
+  height: 40px; }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数的返回值return</title>
+	</head>
+	<body>
+		<script>
+			//练习:创建函数getMax(),传递任意两个数字，比较最大值，给出结果
+			function getMax(a, b) {
+				//方案1:分支结构实现 
+				if (a > b) {
+					//console.log(a)
+					return a
+				} else {
+					//console.log(b)
+					return b
+				}
+				//方案2:三目结构实现
+				//console.log(a > b ? a : b)
+			}
+			//var n = getMax(333, 888)
+			//console.log(n)
+
+			//练习:创建函数getMax2(),传递任意3个数字，比较它们的最大值，并返回结果
+			function getMax2(a, b, c) {
+				//使用分支结构
+				// if(a>b && a>c){
+				// 	return a
+				// }else if(b>c){
+				// 	return b
+				// }else{
+				// 	return c
+				// }
+				//使用三目运算符判断3个数的最大值
+				return a > b && a > c ? a : (b > c ? b : c)
+			}
+			var n = getMax2(3, 9, 11)
+			console.log(n)
+		</script>
+	</body>
+</html>

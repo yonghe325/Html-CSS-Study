@@ -81,7 +81,7 @@ body::after {
     flex-wrap: wrap;
 
     width: 100%;
-    height: 100%;
+    height: 1000px;
 }
 .product_show>div{
     display: flex;

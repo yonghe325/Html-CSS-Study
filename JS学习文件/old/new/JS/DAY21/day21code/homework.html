@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>作业答案</title>
+	</head>
+	<body>
+		<script>
+			// 创建函数isPrime，传递任意一个数字
+			// 查看是否为素数，返回一个布尔型的值
+			function isPrime(n) {
+				console.log('素数判断逻辑开始:')
+				//数据的合法性校验
+				if(n <= 1){ //如果n小于等于1，不是素数，直接结束
+					return false
+				}
+				//循环获取2~n-1之间所有的整数
+				for (var i = 2; i < n; i++) {
+					//如果当前循环到的变量i可以被n整除，说明n不是素数
+					if(n%i === 0){
+						//一旦出现一个数i可以被n整除，n就不是素数，直接返回结果
+						return false //返回false结果并结束函数
+					}
+				}
+				console.log('素数判断逻辑结束')
+				//直到for循环结束，没有出现任意一个数i可以被n整除，说明n是素数
+				return true //返回true结果并结束函数
+			}
+			var r = isPrime(6)//调用函数，并用r变量保存函数return的结果
+			console.log(r)//打印r变量保存的函数结果
+			console.log(isPrime(7))//直接调用函数的功能，然后直接打印函数return的结果
+			
+			//打印出101~200之间所有的素数
+			//1. 循环101~200之间所有的数字
+			//2. 使用刚刚写好的函数判断是否为素数
+			//3. 如果是素数，打印出来
+			for(var i = 101; i<=200;i++){
+				//i代表我们循环到的每个整数
+				if(isPrime(i)){//如果是素数，isPrime()的结果就是true
+					console.log(i)//是true就打印出来当前循环到的数字
+				}
+			}
+		</script>
+	</body>
+</html>

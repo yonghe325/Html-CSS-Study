@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS操作网页元素</title>
+	</head>
+	<body>
+		用户<input type="text" id="user"/><br>
+		密码<input type="password" id="pwd"/><br>
+		<button id="btn">登录</button>
+		<script>
+			//写在所有的HTML的最后面，确保所有的网页元素加载完毕
+			//1.绑定事件(用户的动作，比如，点击按钮)
+			//用户一点击btn按钮就要执行function事件处理函数
+			btn.onclick = function(){
+				//console.log('点击按钮啦！')
+				//获取用户名输入框的值
+				//console.log(user.value)
+				//获取密码框的值
+				//console.log(pwd.value)
+				//弹出警示框
+				//alert('我是警示框')
+				//如果用户输入的用户名是admin,密码是123456
+				//警示框弹出登录成功，否则弹出登录失败
+				var a = user.value //获取用户输入的用户名
+				var b = pwd.value //获取用户输入的密码
+				alert(a==='admin' && b==='123456'?'登录成功':'登录失败')
+			}
+		</script>
+	</body>
+</html>

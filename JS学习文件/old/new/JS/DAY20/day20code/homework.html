@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>作业答案</title>
+	</head>
+	<body>
+		<input type="text" id="num" placeholder="请输入一个整数">
+		<button id="btn">查看</button>
+		<script>
+			//作业3:
+			btn.onclick = function() { //给按钮绑定点击事件
+				//获取用户输入的值
+				var n = num.value
+				//console.log(n)
+				//判断刚刚获取到的n是否为素数
+				//素数:循环2~n-1之间是否有能被n整除的数字，如果没有，才是素数
+				for (var i = 2,count=0; i < n; i++) {
+					//判断当前循环到的i是否能被n整除
+					if(n%i === 0){
+						//如果有能被n整除的i,计数+1
+						count++
+						break //只要出现一个能被n整除的i,说明n就是非素数，没必要进行后面的循环了
+					}
+				}
+				//当循环结束后，如果能被整除的数量还是0，说明中间没有遇到能被整除的数字
+				//证明当前数字是素数
+				if(count===0){
+					alert('素数')
+				}else{
+					alert('非素数')
+				}
+			}
+
+			//作业1:
+			// 创建函数getSum，计算出1~任意数字之间所有整数的和，调用多次
+			function getSum(n) { //n是形参，用于接收实参的值
+				// 计算1~n之间所有整数的和 
+				for (var i = 1, sum = 0; i <= n; i++) { //i循环变量1~n sum用于保存累加的结果
+					//将循环到的每个i值累加到sum中
+					// sum = sum + i
+					sum += i
+				}
+				console.log(sum) //输出累加的结果
+			}
+			//调用函数
+			// getSum(100)
+			// getSum(10)
+			// getSum(1000)
+
+			//作业2:
+			// 创建函数getCount，传递任意两个年份，统计出两者之间所有闰年的数量，调用多次
+			function getCount(n1, n2) { //多个参数间用逗号隔开
+				//循环n1~n2之间所有的年份 n1开始年份 n2结束年份
+				for (var i = n1, count = 0; i <= n2; i++) { //i循环变量 count计数
+					//判断循环到的年份是否为闰年
+					if (i % 4 === 0 && i % 100 !== 0 || i % 400 === 0) {
+						count++ //数量加1
+						console.log(i + '年是闰年')
+					}
+				}
+				console.log(n1 + '年到' + n2 + '年之间一共有' + count + '个闰年')
+				//循环结束后，打印最终的数量
+			}
+			// getCount(2000,2100)
+			// getCount(1949,2022)
+		</script>
+	</body>
+</html>

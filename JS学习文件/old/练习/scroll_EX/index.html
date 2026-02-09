@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电梯导航练习 - Scroll相关属性</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部固定导航 -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">ElevatorNav</div>
+            <ul class="nav-menu">
+                <li><a href="#section1">首页</a></li>
+                <li><a href="#section2">产品</a></li>
+                <li><a href="#section3">服务</a></li>
+                <li><a href="#section4">关于</a></li>
+                <li><a href="#section5">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 电梯导航（侧边固定） -->
+    <div class="elevator-nav">
+        <div class="elevator-header">
+            <i class="fas fa-arrow-up"></i>
+            <!-- <span>电梯导航</span> -->
+        </div>
+        <ul class="elevator-menu">
+            <li class="elevator-item active" data-target="section1">
+                <a href="#section1">
+                    <i class="fas fa-home"></i>
+                    <span class="elevator-text">首页</span>
+                </a>
+                <div class="elevator-tooltip">返回顶部</div>
+            </li>
+            <li class="elevator-item" data-target="section2">
+                <a href="#section1">
+                    <i class="fas fa-box"></i>
+                    <span class="elevator-text">产品</span>
+                </a>
+                <div class="elevator-tooltip">产品介绍</div>
+            </li>
+            <li class="elevator-item" data-target="section3">
+                <a href="#section1">
+                    <i class="fas fa-cogs"></i>
+                    <span class="elevator-text">服务</span>
+                </a>
+                <div class="elevator-tooltip">我们的服务</div>
+            </li>
+            <li class="elevator-item" data-target="section4">
+                <a href="#section1">
+                    <i class="fas fa-info-circle"></i>
+                    <span class="elevator-text">关于</span>
+                </a>
+                <div class="elevator-tooltip">关于我们</div>
+            </li>
+            <li class="elevator-item" data-target="section5">
+                <a href="#section1">
+                    <i class="fas fa-phone"></i>
+                    <span class="elevator-text">联系</span>
+                </a>
+                <div class="elevator-tooltip">联系方式</div>
+            </li>
+        </ul>
+        <div class="elevator-footer">
+            <div class="scroll-progress">
+                <div class="progress-bar"></div>
+                <span class="progress-text">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主要内容区域 -->
+    <main class="content">
+        <!-- 第一节 -->
+        <section id="section1" class="content-section">
+            <div class="section-header">
+                <h1><i class="fas fa-home"></i> 首页区域</h1>
+                <p class="section-subtitle">练习scrollTop、scrollHeight、clientHeight等属性</p>
+            </div>
+            <div class="section-content">
+                <div class="scroll-info-card">
+                    <h3><i class="fas fa-chart-line"></i> 滚动信息面板</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">window.scrollY:</span>
+                            <span id="scrollY" class="info-value">0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">document.body.scrollHeight:</span>
+                            <span id="scrollHeight" class="info-value">0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">window.innerHeight:</span>
+                            <span id="innerHeight" class="info-value">0</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">当前章节:</span>
+                            <span id="currentSection" class="info-value">section1</span>
+                        </div>
+                    </div>
+                    <div class="scroll-controls">
+                        <button id="scrollToTop" class="btn">
+                            <i class="fas fa-arrow-up"></i> 滚动到顶部
+                        </button>
+                        <button id="scrollToBottom" class="btn">
+                            <i class="fas fa-arrow-down"></i> 滚动到底部
+                        </button>
+                        <button id="scrollBy200" class="btn">
+                            <i class="fas fa-chevron-down"></i> 向下滚动200px
+                        </button>
+                    </div>
+                </div>
+                <div class="lorem-content">
+                    <h3>Scroll相关属性详解</h3>
+                    <p><strong>scrollTop:</strong> 元素内容垂直滚动的像素数</p>
+                    <p><strong>scrollHeight:</strong> 元素内容的总高度，包括不可见部分</p>
+                    <p><strong>clientHeight:</strong> 元素的内部高度，包含内边距但不包括边框、滚动条</p>
+                    <p><strong>offsetTop:</strong> 元素相对于offsetParent的顶部距离</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第二节 -->
+        <section id="section2" class="content-section">
+            <div class="section-header">
+                <h1><i class="fas fa-box"></i> 产品介绍</h1>
+                <p class="section-subtitle">学习scroll事件监听和节流优化</p>
+            </div>
+            <div class="section-content">
+                <div class="product-grid">
+                    <div class="product-card" data-product="1">
+                        <div class="product-image">产品1</div>
+                        <h3>智能解决方案</h3>
+                        <p>使用scroll事件实现产品卡片随滚动淡入效果</p>
+                        <div class="scroll-indicator">滚动可见度: <span>0%</span></div>
+                    </div>
+                    <div class="product-card" data-product="2">
+                        <div class="product-image">产品2</div>
+                        <h3>数据分析工具</h3>
+                        <p>监听scroll事件，计算元素在视口中的位置</p>
+                        <div class="scroll-indicator">滚动可见度: <span>0%</span></div>
+                    </div>
+                    <div class="product-card" data-product="3">
+                        <div class="product-image">产品3</div>
+                        <h3>云服务平台</h3>
+                        <p>通过getBoundingClientRect()获取元素位置信息</p>
+                        <div class="scroll-indicator">滚动可见度: <span>0%</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三节 -->
+        <section id="section3" class="content-section">
+            <div class="section-header">
+                <h1><i class="fas fa-cogs"></i> 我们的服务</h1>
+                <p class="section-subtitle">实践scrollIntoView和滚动动画</p>
+            </div>
+            <div class="section-content">
+                <div class="service-list">
+                    <div class="service-item">
+                        <h3><i class="fas fa-code"></i> scrollIntoView()</h3>
+                        <p>使元素滚动到视口中，可配置behavior: 'smooth'实现平滑滚动</p>
+                        <button class="btn-sm demo-scroll" data-target="section1">
+                            滚动到首页
+                        </button>
+                    </div>
+                    <div class="service-item">
+                        <h3><i class="fas fa-mouse-pointer"></i> 事件委托优化</h3>
+                        <p>使用一个事件监听器处理所有电梯导航项点击</p>
+                        <button class="btn-sm demo-scroll" data-target="section5">
+                            滚动到联系
+                        </button>
+                    </div>
+                    <div class="service-item">
+                        <h3><i class="fas fa-tachometer-alt"></i> 滚动性能优化</h3>
+                        <p>使用requestAnimationFrame和节流优化scroll事件</p>
+                        <button class="btn-sm" id="toggleAnimation">
+                            切换平滑滚动
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四节 -->
+        <section id="section4" class="content-section">
+            <div class="section-header">
+                <h1><i class="fas fa-info-circle"></i> 关于我们</h1>
+                <p class="section-subtitle">掌握Intersection Observer API</p>
+            </div>
+            <div class="section-content">
+                <div class="observer-demo">
+                    <div class="observer-item">
+                        <div class="observer-status">不可见</div>
+                        <p>元素1 - 使用IntersectionObserver检测可见性</p>
+                    </div>
+                    <div class="observer-item">
+                        <div class="observer-status">不可见</div>
+                        <p>元素2 - 更高效的滚动监听方案</p>
+                    </div>
+                    <div class="observer-item">
+                        <div class="observer-status">不可见</div>
+                        <p>元素3 - 不会影响主线程性能</p>
+                    </div>
+                </div>
+                <div class="code-example">
+                    <h4>IntersectionObserver 示例代码:</h4>
+                    <pre><code>const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.5 });</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第五节 -->
+        <section id="section5" class="content-section">
+            <div class="section-header">
+                <h1><i class="fas fa-phone"></i> 联系我们</h1>
+                <p class="section-subtitle">综合应用所有滚动知识</p>
+            </div>
+            <div class="section-content">
+                <div class="contact-form">
+                    <h3>滚动到联系表单</h3>
+                    <p>尝试使用所有学到的滚动方法来实现功能</p>
+                    <div class="form-group">
+                        <label>测试输入框（滚动时观察焦点）</label>
+                        <input type="text" id="testInput" placeholder="滚动时测试输入框行为">
+                    </div>
+                    <div class="scroll-experiments">
+                        <h4>滚动实验:</h4>
+                        <button id="experiment1" class="btn-experiment">
+                            实验1: 滚动到指定位置
+                        </button>
+                        <button id="experiment2" class="btn-experiment">
+                            实验2: 元素跟踪滚动
+                        </button>
+                        <button id="experiment3" class="btn-experiment">
+                            实验3: 滚动节流对比
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- 底部区域 -->
+    <footer class="footer">
+        <p>电梯导航练习项目 - 专门为学习Scroll相关API设计</p>
+        <p class="footer-info">
+            <span id="scrollInfo">滚动信息: </span>
+            <span id="timeInfo">时间: </span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

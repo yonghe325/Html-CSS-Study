@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex01 li事件委托</title>
+  <style>
+    div>ul>li {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<!-- 点击li , 当前li的文字变为红色 -->
+
+<body>
+  <div>
+    <ul>
+      <li data-li_id="1">Lorem, ipsum.</li>
+      <li data-li_id="2">Lorem, ipsum.</li>
+      <li data-li_id="3">Lorem, ipsum.</li>
+      <li data-li_id="4">Lorem, ipsum.</li>
+      <li data-li_id="0">Lorem, ipsum.</li>
+      <li data-li_id="0">Lorem, ipsum.</li>
+      <li data-li_id="0">Lorem, ipsum.</li>
+      <li data-li_id="8">Lorem, ipsum.</li>
+      <li data-li_id="9">Lorem, ipsum.</li>
+      <li data-li_id="10">Lorem, ipsum.</li>
+    </ul>
+  </div>
+  <script>
+    (function () {
+      const ul = document.querySelector('ul').addEventListener('click', function (e) {
+        if (e.target.dataset.li_id != null && e.target.dataset.li_id != 0 ) {
+          e.target.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')
+          console.log(e.target.style.color);
+        }
+        e.stopPropagation()
+      })
+      const div = document.querySelector('div').addEventListener('click',function(e){
+        this.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')
+      })
+    })();
+
+  </script>
+</body>
+
+</html>

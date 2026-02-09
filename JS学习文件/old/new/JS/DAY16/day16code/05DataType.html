@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数据类型测试</title>
+	</head>
+	<body>
+		<script>
+			//1.数值型number
+			//1.1 整型
+			var n1 = 10 
+			//2进制:以0b开头的数字
+			var n2 = 0b1010 //倒着数3 2 1 0次方 2^1+2^3=2+8=10
+			//8进制:以0开头的数字
+			var n3 = 012 //倒着数0 1次方 (2*8^0)+(1*8^1)=(2*1)+(1*8)=2+8=10 
+			//16进制:以0x开头的数字
+			var n4 = 0xA
+			console.log(n1,n2,n3,n4)//都是10
+			
+			//1.2 浮点型
+			var f1 = 3140
+			var f2 = 3.14E3 //3.14*10^3
+			var f3 = 31400E-1//31400*10^-1=31400/10=3140
+			console.log(f1,f2)//3140
+			console.log(typeof f1,typeof n4)//number,number
+			
+			//2.字符串型string
+			var str1 = '新哥'
+			var str2 = 'str1'
+			console.log(str2)
+			//检测数据的类型
+			var str3 = '3'
+			console.log(str3,typeof str3)//3 string
+			//查看任意一个字符的编码
+			console.log('a'.charCodeAt())//97
+			console.log('中'.charCodeAt())//20013
+			
+			//3.布尔型boolean
+			var b1 = false
+			var b2 = true
+			console.log(b1,b2,typeof b1)//false,true,'boolean'
+			var b3 = 0>1
+			console.log(b3)//false
+			
+			//4.未定义型undefined--声明变量但未赋值
+			var c
+			console.log(c,typeof c)//undefined 'undefined'
+			
+			//5.空object
+			var p = null
+			console.log(p,typeof p)//null 'object'
+		</script>
+	</body>
+</html>

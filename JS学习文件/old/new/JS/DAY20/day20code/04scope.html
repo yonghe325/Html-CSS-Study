@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>变量的作用域scope</title>
+	</head>
+	<body>
+		<script>
+			//全局作用域:除了函数以外的区域，只有一个
+			//全局变量:在全局作用域下声明的变量，可以在任意作用域下使用
+			var a = '北京市城管'
+			function shiJS(){
+				//函数作用域:在函数以内的区域
+				//局部变量:在函数作用域下声明的变量，只能在所在的函数作用域使用
+				var b = '石景山城管'
+				console.log(b)//局部函数作用域下可以使用自己的局部变量b
+				console.log(a)//局部作用域下可以使用全局变量a
+			}
+			shiJS()
+			//console.log(b) //无法在全局作用域下使用局部变量b
+			console.log(a)//全局作用域下可以使用全局变量
+			
+			function haiD(){
+				var c = '海淀城管'
+				console.log(c)//函数作用域下可以使用自己的局部变量
+				console.log(a)//函数作用域下可以使用全局变量
+				//console.log(b)//报错:不可以使用其他函数作用域中的局部变量
+			}
+			haiD()
+			console.log(a)//全局变量可以在全局范围下使用
+			//console.log(c)//报错:局部变量只能在所属的函数作用域下使用
+			
+			var n1 = 2
+			function fn(){
+				n1 = 4
+				//var n2 = 6
+				n3 = 6//声明时不加var的变量是全局变量，属于特例，我们自己写的时候不要这么写
+			}
+			fn()//函数必须调用才会执行!
+			console.log(n1)//4，全局变量，初始值为2，被覆盖成4
+			//console.log(n2)//报错:局部变量n2不可以在全局访问
+			console.log(n3)//6，全局变量，可以使用
+			
+			//思考:以下程序的输出结果是?
+			function fun(){
+				m3 = 5 //全局变量 5
+				m2 = m3 //全局变量 5
+				var m1 = m2//m1是局部变量
+				//var m1 = m2 = m3 = 5//这样写只有m1是带var的
+				//var m1,m2,m3 = 5//这样是声明了3个局部变量，用逗号隔开，相当于3个变量都带var
+			}
+			fun()
+			console.log(m3)//5
+			console.log(m2)//5
+			console.log(m1)//局部变量只能在局部使用
+		</script>
+	</body>
+</html>

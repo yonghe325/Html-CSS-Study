@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>捕获 冒泡</title>
+  <style>
+    .one{
+      width: 500px;
+      height: 500px;
+      background-color: red;
+    }
+    .two{
+      width: 400px;
+      height: 400px;
+      background-color: blue;
+    }
+    .three{
+      width: 300px;
+      height: 300px;
+      background-color: green;
+    }
+    .four{
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="one" >
+    <div class="two">
+      <div class="three">
+        <div class="four">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const one = document.querySelector('.one')
+      const two = document.querySelector('.two')
+      const three = document.querySelector('.three')
+      const four = document.querySelector('.four')
+      // one.addEventListener('click', function () {
+      //   alert('one')
+      // },true)
+      // two.addEventListener('click', function () {
+      //   alert('two')
+      // },true)
+      // three.addEventListener('click', function () {
+      //   alert('three');
+      // }.true)
+      // four.addEventListener('click', function () {
+      //   alert('four');
+      // },true)
+      //捕获
+      one.addEventListener('click', function (e) {
+        alert('one')
+      })
+      two.addEventListener('click', function (e) {
+        alert('two')
+      })
+      three.addEventListener('click', function (e) {
+        alert('three');
+        e.stopPropagation()
+        //阻挡事件流
+      })
+      four.addEventListener('click', function (e) {
+        alert('four');
+      })
+    })();
+
+  </script>
+</body>
+
+</html>

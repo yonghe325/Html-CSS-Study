@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数的返回值return</title>
+	</head>
+	<body>
+		<script>
+			//计算任意两个数字之和
+			function add(a,b){
+				//console.log(a+b)
+				//返回函数的结果，让函数外部也可以使用这个结果
+				return a+b
+			}
+			//var n = add(1,2) //调用函数，并将函数return的值交给变量n保存
+			//console.log(n)//打印变量n
+			//console.log(add(1,2))//直接打印函数return的值
+			
+			function f1(){
+				console.log('我是函数的功能')
+				//return '大腰子'
+				return //undefined
+				//console.log('函数结束了')//遇到return 函数会直接结束，return后的语句不会执行
+			}
+			//console.log(f1())//函数return什么结果，我们调用函数时就拿到什么结果
+			
+			//练习:创建函数isRun(),传递任意一个年份，判断是否为闰年
+			//返回一个布尔型的值
+			function isRun(year){
+				//方案1
+				// if(year%4===0&&year%100!==0 || year%400===0){
+				// 	return true
+				// }
+				// return false
+				//方案2
+				//因为下面这个逻辑表达式结果就是布尔类型的，所以if可以省略
+				return year%4===0&&year%100!==0 || year%400===0
+			}
+			//console.log(isRun(2001))
+			
+			//创建函数getCountry(),传递任意一个数字，返回对应国家
+			//1-阿联酋  2-日本  3-印度  其他-八宝山
+			//要求:使用switch-case结构
+			function getCountry(a){
+				switch(a){
+					case 1 :
+					     return '阿联酋'
+					case 2 :
+					     return '日本'		
+					case 3 :
+					     return '印度'
+					default:
+					    return '八宝山'
+				}
+			}
+			console.log(getCountry(33))
+		</script>
+	</body>
+</html>

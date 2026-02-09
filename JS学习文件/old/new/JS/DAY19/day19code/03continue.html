@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>continue跳过</title>
+	</head>
+	<body>
+		<script>
+			//打印1~10之间所有的整数，不包含6
+		/* 	for (var i = 1; i <= 10; i++) {
+				//判断，当i为6的时候，跳过
+				if(i === 6){
+					// break //强制结束循环
+					continue
+				}
+				console.log(i)
+			} */
+			
+			//练习:打印出1~100之间所有的整数，不包含能被3或者能被4整除的数字
+			for(var i = 1; i<=100 ;i++){
+				if(i%3===0 || i%4===0){
+					continue
+				}
+				console.log(i)
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数据类型转换-强制转换</title>
+	</head>
+	<body>
+		<script>
+			//隐式转换的底层代码其实调用了Number()
+			//Number()函数
+			var n1 = Number('3')//3 'number'
+			var n2 = Number('3a')//NaN 'number'
+			var n3 = Number(true)//1 'number'
+			var n4 = Number(false)//0 'number'
+			var n5 = Number(undefined)//NaN 'number'
+			var n6 = Number(null)//0 'number'
+			console.log(n6,typeof n6)
+		</script>
+	</body>
+</html>

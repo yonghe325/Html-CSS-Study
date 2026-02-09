@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>强制类型转换</title>
+	</head>
+	<body>
+		<script>
+			//Number()函数--强制转换为数字
+			console.log(Number('3'))//3
+			console.log(Number('3a'))//NaN
+			console.log(Number(true))//1
+			console.log(Number(false))//0
+			console.log(Number(undefined))//NaN
+			console.log(Number(null))//0
+			
+			//parseInt()函数--强制转换为整型
+			var p1 = parseInt(3.9)//3 舍弃小数部分
+			var p2 = parseInt('6a')//6
+			var p3 = parseInt('a6')//NaN
+			var p4 = parseInt(null)//NaN
+			console.log(p4)
+			console.log(parseInt(undefined))
+			
+			//parseFloat()函数--强制转换为小数
+			var f1 = parseFloat('3.14a')//3.14
+			var f2 = parseFloat('a3.14')//NaN
+			var f3 = parseFloat('75')//75
+			console.log(f3)
+			
+			//转字符串
+			var n = 2 //number类型
+			var str = n.toString() //把n强制转为字符串
+			console.log(str,typeof str)//2 string
+		</script>
+	</body>
+</html>

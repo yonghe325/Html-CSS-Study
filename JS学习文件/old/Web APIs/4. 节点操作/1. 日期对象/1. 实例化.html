@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>实例化日期对象</title>
+</head>
+
+<body>
+  <p class="date">
+    ???
+  </p>
+  <script>
+    // const p = document.querySelector('.date')
+    // const date = new Date()
+    // // p.innerHTML = date
+
+    // const year = date.getFullYear()
+    // const month = (date.getMonth()+1).toString(10).padStart(2,'0')
+    // const day = date.getDate().toString(10).padStart(2,'0')
+    // const weekday = date.getDay()
+    // const hour = date.getHours().toString(10).padStart(2,'0')
+    // const min = date.getMinutes().toString(10).padStart(2,'0')
+    // const s = date.getSeconds()
+    // console.log(year)
+    // console.log(month)
+    // console.log(day)
+    // console.log(weekday)
+    // console.log(hour)
+    // console.log(min)
+    // console.log(s);
+    // p.innerHTML = `${year}-${month}-${day} ${hour}:${min}`
+    function getCurrentTime() {
+      const date = new Date()
+      return `${date.getFullYear()}-${(date.getMonth() + 1).toString(10).padStart(2, '0')}-${date.getDate().toString(10).padStart(2, '0')} ${date.getHours().toString(10).padStart(2, '0')}:${date.getMinutes().toString(10).padStart(2, '0')}:${date.getSeconds().toString(10).padStart(2, '0')}`
+      // return date.toLocaleDateString()
+      // return date.toLocaleString()
+      // return date.toLocaleTimeString()
+      // return date.toTimeString()
+      // return date.getTimezoneOffset()
+    }
+
+    (function () {
+      const p = document.querySelector('.date')
+      p.innerHTML = getCurrentTime()
+      setInterval(function () {
+        p.innerHTML = getCurrentTime()
+      }, 1000)
+    })();
+
+
+
+
+  </script>
+</body>
+
+</html>

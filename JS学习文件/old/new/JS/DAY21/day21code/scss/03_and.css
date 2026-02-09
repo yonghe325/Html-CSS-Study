@@ -1,0 +1,10 @@
+.box {
+  border: 1px solid #000; }
+  .box ul {
+    list-style: none; }
+    .box ul li {
+      height: 30px; }
+      .box ul li a {
+        text-decoration: none; }
+      .box ul li:hover {
+        background-color: #f00; }

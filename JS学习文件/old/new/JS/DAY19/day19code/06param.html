@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>带参数param的函数</title>
+	</head>
+	<body>
+		<script>
+			//计算任意两个数字相加的和
+			function add(c,d){//形参:用来接收外部传递给函数的值
+				console.log(c+d)
+			}
+			//实参:调用函数时，实际传递的值
+			add(1,2)
+			add(8,7)
+			add(8,10)
+			add(8)//8+Number(undefined)=8+NaN=NaN
+			add()//Number(undefined)+Number(undefined)=NaN+NaN=NaN
+			add(1,2,3)//1+2=3
+			
+			console.log(5&7)
+			console.log(3&5)
+			console.log(7|13)
+			console.log(9^15)
+		</script>
+	</body>
+</html>

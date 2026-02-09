@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>for循环</title>
+	</head>
+	<body>
+		<script>
+			//格式: for(开始条件;结束条件;更改条件){ 循环体 }
+			//练习:循环打印1~10之间所有的整数
+			/* for(var i = 1;i<=10;i++){
+				console.log(i)
+			} */
+
+			//练习:循环打印 50 45 40 35 30
+			/* for(var i = 50;i>=30;i-=5){
+				console.log(i)
+			} */
+
+			//练习:计算出1~100之间所有能被7整除的数字的和
+			// var sum = 0
+			/* for(var i = 1,sum=0; i <= 100;i++){
+				if(i%7===0){
+					//console.log(i)
+					sum += i
+				}
+			}
+			console.log(sum) */
+
+			//练习:统计2000~2100年之间闰年的个数
+			/* for(var i =2000,count=0;i<=2100;i++){
+				//如果是闰年，就累加，不是闰年不累加
+				if(i%4===0 && i%100 !=0 || i%400 ===0){
+					count++
+				}
+			}
+			console.log(count)//25 */
+
+			// 注意:循环的终止条件如果有多个话，是最后一个起作用
+			// i <= 10起作用，执行了10次
+			for (var i = 1, j = 50; j >= 30, i <= 10; i++, j--) {
+				console.log(i, j)
+			}
+		</script>
+	</body>
+</html>

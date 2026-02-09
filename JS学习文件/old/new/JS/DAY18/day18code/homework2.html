@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>点击按钮调整文字大小</title>
+		<style>
+			p {
+				width: 400px;
+				background-color: lightgreen;
+				font-size: 20px; /*初始字体大小为20px*/
+			}
+		</style>
+	</head>
+	<body>
+		<p id="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, ea. At velit accusantium laudantium consectetur quasi quas vel earum perspiciatis mollitia. Magnam eius quod odit veritatis deserunt in nisi qui!</p>
+		<button id="btn1">变大</button>
+		<button id="btn2">变小</button>
+		<script>
+			var a = 20 //变量a声明在两个函数外，这样两个函数的字号使用同一个值
+			//给第1个按钮绑定点击事件
+			btn1.onclick = function(){
+				//每点一次按钮，字号+1
+				a++
+				//把自增好的a当做字号大小赋值给标签p的font-size属性
+				box.style.fontSize = a+'px'
+			}
+			//给第2个按钮绑定点击事件
+			btn2.onclick = function(){
+				//每点一次按钮，字号-1
+				a--
+				//把自增好的a当做字号大小赋值给标签p的font-size属性
+				box.style.fontSize = a+'px'
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>回调函数练习callback</title>
+	</head>
+	<body>
+		<script>
+			//练习:创建函数getSum,传递任意一个数字
+			//return 1~任意数字之间所有整数的和
+			/* function getSum(n) {
+				for (var i = 1, sum = 0; i <= n; i++) {
+					sum += i
+				}
+				return sum
+			}
+			console.log(getSum(10)) */
+
+			function getSum(n, cb) {
+				for (var i = 1, sum = 0; i <= n; i++) {
+					sum += i
+				}
+				cb(sum) //cb就是我们调用getSum()时传递进来的匿名函数
+				//cb(sum)调用匿名函数，并将累加的sum结果传递给下面匿名函数的形参r
+			}
+			getSum(100, function(r) {
+				console.log(r)
+			})
+
+			function xin(cb) {
+				console.log('新的功能')
+				var a = 666
+				cb(a) //调用下面的匿名函数，并将变量a的值666传递给下面的匿名函数
+			}
+			xin(function(r) {
+				console.log(r)
+			})
+
+			//创建函数getCount,传递任意两个数字，查看两者之间闰年的数量
+			//要求:使用回调函数获取结果
+			function getCount(n1, n2, cb) {
+				//循环n1~n2之间所有的年份
+				for (var i = n1, count = 0; i <= n2; i++) {
+					if (i % 4 === 0 && i % 100 !== 0 || i % 400 === 0) {//是闰年
+						count++ //统计的闰年个数+1
+					}
+				}
+				cb(count)//调用传递进来的回调函数，并将count结果传出
+			}
+			//res用来保存上面函数调用匿名回调函数时传入的结果count
+			getCount(1949,2022,function(res){
+				console.log(res)
+			})
+		</script>
+	</body>
+</html>

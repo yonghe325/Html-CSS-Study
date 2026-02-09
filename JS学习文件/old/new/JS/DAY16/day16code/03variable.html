@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS变量测试</title>
+	</head>
+	<body>
+		<script>
+			//1.变量的声明
+			//声明了一个叫做x的变量，用来保存数值1
+			var x = 1
+			//声明了一个叫做color的变量，用来保存值'red'
+			var color = 'red' //注意这里的'red'要加引号，否则报错！
+			//打印查看两个变量的值
+			console.log(x,color)
+			
+			//2.练习：声明多个变量，分别保存一个用户的:
+			//用户名uname，邮箱email，手机phone，性别gender
+			//最后打印输出这组变量的值
+			var uname = 'xin88'
+			var email = 'xin@tedu.cn'
+			var phone = 18811112222
+			var gender = '男'
+			console.log(uname,email,phone,gender)
+			
+			//3.使用一个var声明多个变量
+			var a=11,b=22
+			console.log(a,b)
+			
+			//4.变量的赋值
+			//变量需要声明才可以使用，如果没声明，就会报错
+			//console.log(c2)//引用错误：ReferenceError: c2 is not defined
+			//变量如果声明了，但是没有赋值，打印出来的是undefined(未定义)空值
+			var c
+			console.log(c)//undefined
+			
+			var user
+			user = 'liang'
+			//重新赋值，不需要再写var
+			user = 'ming'
+			user = 999
+			//变量的值的类型也可以变，由字符串变为数字，所以称JS是弱类型语言
+			//没有贬义，指的是它的赋值特点
+			console.log(user)
+			
+			// A 变量可以声明但不赋值
+			// B 变量可以多次赋值，且为不同类型
+			// C 变量可以未声明赋值 错误
+			// D 变量可以一次声明多个
+
+			//5.变量的命名规则 由字母 数字 下划线_ 美元符号$构成
+			var a1 = 2
+			//var 1a = 3 变量名称不可以用数字开头
+			var _b2 = 4
+			var $c3 = 5
+			//var var = 6 变量名称不能使用关键字
+			var 城市 = '大连'
+			console.log(城市)
+			
+			//6.练习:声明多组变量保存商品的单价productXPrice和数量productXNum
+			//声明变量保存商品的总价total
+			//最后打印输出总价
+			var product1Price = 30,product1Num = 2
+			var product2Price = 50,product2Num = 3
+			var total = product1Price*product1Num + product2Price*product2Num
+			console.log(total)
+			
+			//7.练习：交换两个变量的值 x=1,y=2 交换后: x=2,y=1
+			var x=108,y=22
+			console.log(x,y)
+			var t //准备一个第3方变量
+			t = x //x的值给t
+			x = y //y的值给x
+			y = t //t的值给y
+			console.log(x,y)
+		</script>
+	</body>
+</html>

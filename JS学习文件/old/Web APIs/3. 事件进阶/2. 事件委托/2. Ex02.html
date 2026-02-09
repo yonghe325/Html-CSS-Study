@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tab栏</title>
+  <style>
+    *{
+      margin: 0 ;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+    }
+    .tab{
+      margin: 0 auto;
+      position: absolute;
+      top: 50px;
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      height: 300px;
+      border: 2px solid rgb(243, 147, 51);
+      /* background-color: red; */
+    }
+    .tab_nav{
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 10px;
+      height: 50px;
+      border-bottom: 2px solid rgb(243, 147, 51);
+
+      /* background-color: blue; */
+    }
+    .tab h3{
+      /* height: 50px; */
+      height: 100%;
+      font-size: 30px;
+    }
+    .tab_nav .tags{
+      width: 300px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      cursor: pointer;
+    }
+    .tag{
+      height: 30px;
+      padding-bottom: 5px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .tag.active{
+      color: red;
+      border-bottom: 2px solid red;
+    }
+    .content{
+      display: flex;
+      position: absolute;
+      top: 50px;
+      visibility: hidden;
+    }
+    .content.active{
+      visibility: visible;
+    }
+    .left{
+      /* width: 200px; */
+      flex: 2;
+      background-color: red;
+    }
+    .right{
+      flex: 3;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+
+      /* width: 300px; */
+      background-color: green;
+    }
+    .pd{
+      width: 149px;
+      height: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="tab">
+    <div class="tab_nav">
+      <h3>每日特价</h3>
+      <ul class="tags">
+        <li class="tag active" data-li_id="1">精选</li>
+        <li class="tag" data-li_id="2">美食</li>
+        <li class="tag" data-li_id="3">百货</li>
+        <li class="tag" data-li_id="4">个护</li>
+        <li class="tag" data-li_id="5">预告</li>
+      </ul>
+    </div>
+
+    <div class="content active" data-pdid="1">
+      <div class="left">1</div>
+      <div class="right">
+        <div class="pd">1</div>
+        <div class="pd">2</div>
+        <div class="pd">3</div>
+        <div class="pd">4</div>
+      </div>
+    </div>
+    <div class="content" data-pdid="2">
+      <div class="left">2</div>
+      <div class="right">
+        <div class="pd">1</div>
+        <div class="pd">2</div>
+        <div class="pd">3</div>
+        <div class="pd">4</div>
+      </div>
+    </div>
+    <div class="content" data-pdid="3">
+      <div class="left">3</div>
+      <div class="right">
+        <div class="pd">1</div>
+        <div class="pd">2</div>
+        <div class="pd">3</div>
+        <div class="pd">4</div>
+      </div>
+    </div>
+    <div class="content" data-pdid="4">
+      <div class="left">4</div>
+      <div class="right">
+        <div class="pd">1</div>
+        <div class="pd">2</div>
+        <div class="pd">3</div>
+        <div class="pd">4</div>
+      </div>
+    </div>
+    <div class="content" data-pdid="5">
+      <div class="left">5</div>
+      <div class="right">
+        <div class="pd">1</div>
+        <div class="pd">2</div>
+        <div class="pd">3</div>
+        <div class="pd">4</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quis illum, architecto nemo dolor suscipit? Nostrum possimus, voluptatem esse quaerat adipisci animi voluptatibus tempore maiores? Repellendus placeat cum est aperiam.
+
+  </div>
+  <script>
+    (function(){
+      const ul = document.querySelector('.tags').addEventListener('mouseover',function(e){
+        if(e.target.dataset.li_id !=null){
+          // console.log(e.target.dataset.li_id);
+          const remove_li = document.querySelector('li.active').classList.remove('active')
+          const remove_content = document.querySelector('div.active').classList.remove('active')
+          e.target.classList.add('active')
+          const content = document.querySelectorAll('.content')[Number(e.target.dataset.li_id)-1].classList.add('active')
+        }
+      })
+
+
+    })();
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: blue; }
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue; }
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: blue;
+  border-color: blue; }

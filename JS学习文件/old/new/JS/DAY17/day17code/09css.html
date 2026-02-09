@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS修改CSS</title>
+		<style>
+			div {
+				width: 300px;
+				height: 300px;
+				background-color: #0aa1ed;
+				border-radius: 15px;
+			}
+			button {
+				display: block; /* 变块 */
+				width: 100px;
+				height: 60px;
+				border-radius: 30px; /* 边框圆角为高度一半,胶囊型 */
+				outline: none; /* 去除外轮廓线 */
+				border: 0; /* 去除边框 */
+				font-size: 25px; /* 调整字体大小 */
+				background-color: lightpink; /* 调整背景颜色 */
+				margin-top: 15px; /* 距离上面元素的外间距 */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<button id="btn1">红色</button>
+		<button id="btn2">绿色</button>
+		<button id="btn3">蓝色</button>
+		<script>
+			btn1.onclick = function(){
+				//修改id值为box的元素的样式(style):将背景颜色改为红色
+				box.style.backgroundColor ='red'
+			}
+			btn2.onclick = function(){
+				//修改id值为box的元素的样式(style):将背景颜色改为红色
+				box.style.backgroundColor ='green'
+			}
+			btn3.onclick = function(){
+				//修改id值为box的元素的样式(style):将背景颜色改为红色
+				box.style.backgroundColor ='blue'
+			}
+		</script>
+	</body>
+</html>

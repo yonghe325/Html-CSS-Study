@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*comment注释*/
+.mydiv {
+	width: 250px;
+	background-color: lightblue;
+}
+
+.mydiv h3 {
+	font-size: 18px;
+}
+
+.mydiv p {
+	font-size: 12px;
+	color: #f00;
+}

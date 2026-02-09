@@ -1,0 +1,137 @@
+DOC--Document 文档
+type--类型
+head--头部
+body--身体、主体
+title--标题
+
+delete--删除
+image--图片
+width--宽度
+height--高度
+table--表格
+
+row--行
+column--列
+data--数据
+date--日期
+number--数字
+
+range--范围
+step--步长
+list-- 列表
+order--排序
+readonly--只读
+
+root--根
+margin--外间距
+border--边框
+padding--内间距
+content--内容
+
+auto--自动
+background--背景
+image--图像 图片
+repeat--重复
+position--位置
+
+center--居中
+top--上 顶部
+bottom-- 下 底部
+left--左
+right--右
+
+box-sizing--盒子计算方案
+display--显示
+hidden--隐藏
+overflow--溢出
+visible--可见
+
+scroll--拖拽条
+float--浮动
+clear--清除
+both--两者都有
+clearfix--清除修正
+
+outline--外轮廓线
+cursor--光标
+default--默认值
+radius--半径
+shadow--阴影
+
+align--对齐方式
+main--主要的
+nowrap--不换行
+vertical--垂直方向
+index--索引
+
+find--查找
+search--查找
+direction--方向
+reverse--反转
+wrap--换行
+
+transition--过渡
+transform--变换
+translate--位移
+animation--动画
+name--名称
+duration--在...期间、花费的时间
+delay--延迟
+play-state--播放状态
+infinite--无限次
+paused--暂停 
+running--运行
+viewport--视口
+
+container--容器 响应式版心
+breakpoint--断点
+group--分组
+
+buttons--按钮
+navbar--导航栏
+badge--徽章
+icons--图标
+dropdowns--下拉菜单
+modal--模态框
+accordion--手风琴
+listgroup--列表组
+carousel--轮播图
+card--卡片
+pagination--分页
+breadcrumb--面包屑导航
+
+JavaScript JS语言
+data数据
+type 类型  
+Error 错误
+function 函数 功能
+defined 定义
+undefined未定义
+invalid 无效
+unexpected 意外
+token 使用
+variable 变量
+const 常量
+declaration 声明
+object对象
+value 值
+onclick 点击
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

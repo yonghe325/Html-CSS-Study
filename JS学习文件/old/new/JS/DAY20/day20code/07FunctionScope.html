@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//创建全局函数
+			function fn1(){
+				console.log('我是一个全局函数')
+			}
+			fn1()//调用全局函数
+			
+			function fun(){//1.定义全局函数
+				console.log('我是全局函数fun()')
+				//2.定义局部函数
+				function fun2(){
+					console.log('我是局部函数fun2()')
+				}
+				//3.局部函数也是函数，需要调用，才会执行，并且要在自己的局部范围内调用
+				fun2()
+			}
+			fun()//在全局作用域下调用全局函数
+			//fun2() 报错:局部函数不能在全局范围下使用
+			
+			//请在每句代码后说明此句代码的作用
+			//思考代码的最终结果是?
+			var a = 1 //声明了一个全局变量
+			function zoo(){ //定义了一个全局函数
+				var a = 2 //声明了一个局部变量
+				function zoo2(){ //定义了一个局部函数
+					console.log(a) //在局部函数中使用局部变量a
+				}
+				zoo2() //调用局部函数
+			}
+			zoo() //调用全局函数
+			
+			//函数提升:程序执行前，会将函数整体提升到所在作用域的最前面
+			foo()
+			function foo(){
+				console.log(999)
+			}
+		</script>
+	</body>
+</html>

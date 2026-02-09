@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>回调函数callback</title>
+	</head>
+	<body>
+		<script>
+			function xin(madai){
+				console.log('新哥开始跑第1棒')
+				madai()
+				console.log('新哥跑到终点')
+				console.log(madai)
+			}
+			function ming(){
+				console.log('铭哥开始跑第2棒')
+				console.log('铭哥跑到终点')
+			}
+			function liang(){
+				console.log('亮哥开始跑')
+				console.log('亮哥跑到终点')
+			}
+			//注意:实参传的是函数的名字，没有小括号!
+			xin(ming) //新哥带着铭哥跑
+			//xin(liang)//新哥带着亮哥跑
+			
+			//新哥带着陌生人跑
+			//调用时，如果传递的是匿名函数，那么是匿名函数的全部内容
+			// xin(function(){
+			// 	console.log('陌生人被新哥套到麻袋里疯狂跑')
+			// })
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数面试题</title>
+	</head>
+	<body>
+		<script>
+			//正常情况下，函数(整体)先提升，变量(声明)再提升
+			b()//1
+			console.log(a)//undefined
+			var a = 2
+			function b(){
+				console.log(1)
+			}
+			
+			//思考:如果变量名与函数名重名，该如何提升?
+			//第1步:函数整体先提升: c = function(){666}
+			//第2步:由于变量c与已提升的函数同名了，所以不提升
+			//第3步:上面的提升工作结束，c保存了一个函数值
+			//第4步:c的值重新被修改成数值2
+			var c = 2
+			function c(){
+				console.log(666)
+			}
+			c()//第5步:数值2不是函数，无法被当做函数使用
+			//报错:TypeError(类型错误): c is not a function(c不是一个函数)
+		</script>
+	</body>
+</html>

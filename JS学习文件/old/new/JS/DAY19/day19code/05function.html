@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数function</title>
+	</head>
+	<body>
+		<script>
+			// console.log('快来买煎饼')
+			// console.log('又香又脆的煎饼')
+			// console.log('所有的煎饼一律八折')
+			
+			//创建函数
+			function laba(){
+				console.log('快来买煎饼')
+				console.log('又香又脆的煎饼')
+				console.log('所有的煎饼一律八折')
+			}
+			//函数的调用
+			laba()
+			laba()
+			laba()
+			
+			//练习:创建函数getSum(),在函数体中封装计算1~100之间所有整数的和
+			//最后调用多次
+			function getSum(){//1.创建一个名字叫做getSum的函数
+				//2.完成函数体--具体的功能
+				for(var i = 1,sum = 0;i<=100;i++){
+					sum += i
+				}
+				console.log(sum)
+			}
+			//3.调用函数
+			getSum()
+			getSum()
+			getSum()
+		</script>
+	</body>
+</html>

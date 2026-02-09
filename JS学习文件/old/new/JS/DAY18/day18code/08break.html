@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>循环的强制结束</title>
+	</head>
+	<body>
+		<script>
+			// var i = 1
+			// while(i<=10){
+			// 	console.log(i)
+			// 	//当i为3的时候
+			// 	if(i === 3){
+			// 		break//强制结束循环
+			// 	}
+			// 	i++
+			// }
+			
+			var i = 1
+			while(true){//死循环
+				console.log(i)
+				if(i===10){//当i为10时，强制结束循环
+					break
+				}
+				i++
+			}
+		</script>
+	</body>
+</html>

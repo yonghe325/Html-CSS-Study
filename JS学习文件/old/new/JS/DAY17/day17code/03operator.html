@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>比较运算符</title>
+	</head>
+	<body>
+		<script>
+			console.log(2=='2')//true,只比较值，都是2
+			console.log(2==='2')//false,比较值和类型，number和string类型不同
+			
+			console.log(1==true)//true 只比较值 都是1
+			console.log(1===true)//false 类型不同 number boolean
+			
+			console.log(null===undefined)//false 类型不同object undefined
+			console.log(null==undefined)//true,设计者认为两者都是空，所以相等
+			
+			//!=和!==非常像，使用上没什么区别
+			console.log(1!=2)//true 值不同
+			console.log(1!==2)//true 值不同
+			console.log('1'!==2)//true 值不同类型也不同
+			
+			//数字和字符串的比较，字符串转为数字
+			console.log(3>'10')//false
+			//字符串之间比较的是编码值
+			console.log('新'>'铭')//false
+			console.log('新'.charCodeAt())//26032
+			console.log('铭'.charCodeAt())//38125
+			//如果两个都是字符串，就不转了，比较编码
+			console.log('3'>'10')//true
+			console.log('3'.charCodeAt())//51
+			console.log('10'.charCodeAt())//49
+			
+			//数字与字符串比较，字符串会转为数字 Number('10a')结果为NaN
+			//NaN比较特殊，与任何值比较，结果都是false
+			console.log(3>'10a')//false
+			console.log(3<'10a')//false
+			console.log(3=='10a')//false
+			console.log(NaN==NaN)//false
+		</script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>滚动事件</title>
+  <style>
+    body {
+      margin-top: 100px;
+      height: 3000px;
+    }
+    div{
+      display: none;
+      margin: 0 auto;
+      overflow: scroll;
+      text-wrap-style: none;
+      width: 300px;
+      height: 400px;
+      border: 1px solid black;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat fuga quidem voluptates, ipsum labore omnis provident a eveniet laudantium quae ex, obcaecati consequuntur! Repellendus deserunt ad eaque dignissimos, quas neque vero, mollitia nulla, fugiat consequatur quod maxime sed! Optio odit excepturi, saepe corrupti ratione commodi voluptates, ipsum iusto quisquam eum, doloribus libero recusandae dolorem quia culpa quos nemo animi autem. Debitis eligendi amet voluptate doloremque natus quasi officia exercitationem, corrupti quae deleniti fugit accusamus, asperiores similique quod ex veritatis aut modi enim nobis blanditiis illum deserunt neque molestias. Consequuntur cumque eius expedita earum nesciunt, ad perspiciatis reiciendis asperiores delectus?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur commodi ad laborum non nesciunt quo quas, alias odio iure nam sint, explicabo ipsum dolorem fuga, molestias quam magni fugiat.
+  </div>
+  <script>
+    window.addEventListener('scroll', function (e) {
+      // console.log('1')
+      // console.log(document.documentElement.scrollTop);
+      const div =document.querySelector('div')
+      const n = document.documentElement.scrollTop
+      if (n >= 100) {
+        div.style.display = 'block'
+      }
+      else{
+        div.style.display = 'none'
+      }
+    })
+      // const div =document.querySelector('div')
+      // div.addEventListener('scroll',function (e) {
+      //   console.log(this.scrollTop , this.scrollLeft);
+      //   if (this.scrollTop >= 200) {
+      //     div.style.backgroundColor = 'red'
+      //   }
+      // })
+  </script>
+</body>
+
+</html>
