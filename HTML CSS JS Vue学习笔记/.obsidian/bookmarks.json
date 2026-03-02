@@ -4,13 +4,19 @@
       "type": "group",
       "ctime": 1757903965749,
       "items": [],
-      "title": "未命名组"
+      "title": "疑问"
     },
     {
       "type": "file",
       "ctime": 1769221541277,
       "path": "JavaScript学习笔记/ECMAScript JavaScript语言基础/1. JS基础/1.1 js的引入.md",
       "title": "*CORS(跨源资源共享)*"
+    },
+    {
+      "type": "file",
+      "ctime": 1770863252855,
+      "path": "NEW JS/5. 基本引用类型/3. 原始值包装类型/4. String.md",
+      "title": "编码策略没听懂"
     }
   ]
 }

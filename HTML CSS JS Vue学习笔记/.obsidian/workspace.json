@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NEW JS/5. 基本引用类型/3. 原始值包装类型/4. String.md",
+                "file": "Vue/第一章/2. Vue简介.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. String"
+              "title": "2. Vue简介"
             }
           }
         ]
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -143,13 +144,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NEW JS/5. 基本引用类型/3. 原始值包装类型/4. String.md",
+                "file": "Vue/第一章/2. Vue简介.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "4. String 的大纲"
+              "title": "2. Vue简介 的大纲"
             }
           }
         ],
@@ -157,7 +158,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,8 +174,12 @@
   },
   "active": "e88325452d6521c9",
   "lastOpenFiles": [
-    "NEW JS/5. 基本引用类型/0.1 toLocaleString()、toString()和 valueOf() 与 重写.md",
+    "Vue/第一章/1. MVVM.md",
+    "Vue/第一章/2. Vue简介.md",
     "NEW JS/5. 基本引用类型/3. 原始值包装类型/4. String.md",
+    "Vue/第一章",
+    "Vue",
+    "NEW JS/5. 基本引用类型/0.1 toLocaleString()、toString()和 valueOf() 与 重写.md",
     "NEW JS/5. 基本引用类型/3. 原始值包装类型/3. Number.md",
     "NEW JS/5. 基本引用类型/3. 原始值包装类型/2. Boolean.md",
     "NEW JS/5. 基本引用类型/3. 原始值包装类型/1. 原始值包装引用类型.md",
@@ -202,15 +208,11 @@
     "NEW JS/5. 基本引用类型/2. RegExp类型",
     "NEW JS/5. 基本引用类型/1. Date类型/2. 日期格式化方法.md",
     "JS 术语.md",
-    "NEW JS/5. 基本引用类型/1. Date/2. 继承的方法.md",
-    "NEW JS/5. 基本引用类型/0.1 toLocaleString() + toString() + valueOf()方法.md",
     "NEW JS/5. 基本引用类型/1. Date类型",
     "NEW JS/5. 基本引用类型",
     "NEW JS/4. 第四章 变量, 作用域与内存/3. 垃圾回收",
-    "NEW JS/4. 第四章 变量, 作用域与内存/2. 执行上下文 与 作用域",
     "JavaScript学习笔记/xpicture/Pasted image 20260127111020.png",
     "JavaScript学习笔记/xpicture/Pasted image 20260127111000.png",
-    "NEW JS/4. 第四章 变量, 作用域与内存/1. 原始值与引用值",
     "JavaScript学习笔记/xpicture/Pasted image 20260126185516.png",
     "JavaScript学习笔记/xpicture/Pasted image 20260122175339.png",
     "html.css图片/标签使用字体图标类名.png",
