@@ -15,5 +15,6 @@ JavaScript 引擎是**执行 JavaScript 代码的程序/解释器**
 | **SpiderMonkey**           | Firefox             | 第一个JS引擎，Brendan Eich开发 |
 | **JavaScriptCore (Nitro)** | Safari              | Apple开发，注重能效           |
 | **Chakra**                 | 旧版 Edge             | 微软开发，已弃用               |
+|                            |                     |                        |
 #### 原型
 #### 代码执行流

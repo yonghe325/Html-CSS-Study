@@ -8,20 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e88325452d6521c9",
+            "id": "5f8d79a5203bbd70",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue/第一章/2. Vue简介.md",
+                "file": "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/2. 理解原型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Vue简介"
+              "title": "2. 理解原型"
+            }
+          },
+          {
+            "id": "37dcf786c6ace286",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1. 原型链"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "entries",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 277.5086555480957
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -144,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Vue/第一章/2. Vue简介.md",
+                "file": "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2. Vue简介 的大纲"
+              "title": "1. 原型链 的大纲"
             }
           }
         ],
@@ -172,54 +186,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e88325452d6521c9",
+  "active": "37dcf786c6ace286",
   "lastOpenFiles": [
-    "Vue/第一章/1. MVVM.md",
-    "Vue/第一章/2. Vue简介.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/2. 理解原型.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/1. 原型模式.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题/1. 其他原型语法.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题/4. 原型的问题.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题/3. 原生对象原型.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题/2. 原型的动态性.md",
+    "html.css图片/Pasted image 20260414150446.png",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/5. 对象迭代.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题",
     "NEW JS/5. 基本引用类型/3. 原始值包装类型/4. String.md",
-    "Vue/第一章",
-    "Vue",
-    "NEW JS/5. 基本引用类型/0.1 toLocaleString()、toString()和 valueOf() 与 重写.md",
-    "NEW JS/5. 基本引用类型/3. 原始值包装类型/3. Number.md",
-    "NEW JS/5. 基本引用类型/3. 原始值包装类型/2. Boolean.md",
-    "NEW JS/5. 基本引用类型/3. 原始值包装类型/1. 原始值包装引用类型.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/5. RegExp实例方法.md",
-    "NEW JS/5. 基本引用类型/3. 原始值包装类型",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/6. RegExp构造函数属性.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/4. RegExp实例属性.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/7. 标志.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/1. RegExp类型.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/1. 正则语法.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/3. RegExp构造函数定义.md",
+    "NEW JS/6. 集合引用类型/2. Array/5. 迭代器方法.md",
+    "NEW JS/6. 集合引用类型/4. Map/2. 顺序与迭代.md",
+    "NEW JS/6. 集合引用类型/6. set/2. 顺序与迭代.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/6. 属性枚举顺序.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/5. 原型 与 in 操作符.md",
+    "NEW JS/8. 对象、类与面向对象编程/1. 理解对象/4. 合并对象.md",
+    "NEW JS/8. 对象、类与面向对象编程/1. 理解对象/3. 读取属性的特性.md",
+    "NEW JS/6. 集合引用类型/2. Array/7. 转换方法.md",
+    "NEW JS/8. 对象、类与面向对象编程/1. 理解对象/1. 属性的类型.md",
+    "NEW JS/0. 补充/8.0 扩展/不可枚举属性.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/4. 原型层级.md",
+    "NEW JS/3. 第三章 语言基础/4. 数据类型/7. Symbol类型/1. Symbol 类型.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/3. 构造函数模式.md",
+    "NEW JS/4. 第四章 变量, 作用域与内存/1. 原始值与引用值/5. 确定类型 instanceof.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/3. 关于原型的操作.md",
+    "html.css图片/Pasted image 20260414131116.png",
+    "html.css图片/Pasted image 20260414131112.png",
+    "html.css图片/Pasted image 20260414131100.png",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式",
+    "span1.md",
+    "NEW JS/0. 补充/8.0 扩展/call() 与 apply().md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象",
+    "NEW JS/8. 对象、类与面向对象编程/1. 理解对象/6. 增强的对象语法",
+    "NEW JS/0. 补充/8.0 扩展",
+    "NEW JS/8. 对象、类与面向对象编程/1. 理解对象",
+    "NEW JS/8. 对象、类与面向对象编程",
+    "NEW JS/7. 迭代器与生成器",
+    "NEW JS/6. 集合引用类型/7. WeakSet",
+    "html.css图片/Pasted image 20260413112313.png",
+    "JavaScript学习笔记/Pasted image 20260412123928.png",
     "html.css图片/Pasted image 20260208172614.png",
-    "NEW JS/5. 基本引用类型/0. 概念.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/0. 正则表达式.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/2. RegExp字面量形式定义.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/6. 断言.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/2. 字符集.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/SEO/基本语法.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/4. 分组 分支 转义.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/5. 定位.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/SEO",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/3. 重复.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式",
-    "NEW JS/5. 基本引用类型/1. Date类型/3. 日期组件方法.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型",
-    "NEW JS/5. 基本引用类型/1. Date类型/2. 日期格式化方法.md",
-    "JS 术语.md",
-    "NEW JS/5. 基本引用类型/1. Date类型",
-    "NEW JS/5. 基本引用类型",
-    "NEW JS/4. 第四章 变量, 作用域与内存/3. 垃圾回收",
     "JavaScript学习笔记/xpicture/Pasted image 20260127111020.png",
     "JavaScript学习笔记/xpicture/Pasted image 20260127111000.png",
     "JavaScript学习笔记/xpicture/Pasted image 20260126185516.png",
-    "JavaScript学习笔记/xpicture/Pasted image 20260122175339.png",
-    "html.css图片/标签使用字体图标类名.png",
-    "html.css图片/引入字体样式表.png",
-    "html.css图片/图标库.png",
-    "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas",
-    "html.css图片/父级不相对.png",
-    "html.css图片/子级绝对 父级相对.png"
+    "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas"
   ]
 }
