@@ -4,21 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "c7b8a7c07c5ad2b5",
+        "id": "a864bbc00f7dc73b",
         "type": "tabs",
         "children": [
           {
-            "id": "5f8d79a5203bbd70",
+            "id": "b5aedd9c234ac965",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/2. 理解原型.md",
+                "file": "NEW JS/8. 对象、类与面向对象编程/00. 小结.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. 理解原型"
+              "title": "00. 小结"
+            }
+          },
+          {
+            "id": "2e9b5b7b26344ad5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NEW JS/0. 补充/8.0 扩展/内置符号属性.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "内置符号属性"
             }
           }
         ]
@@ -40,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "entries",
+                "query": "constructor",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.5086555480957
+    "width": 200
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -143,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链.md",
+                "file": "NEW JS/8. 对象、类与面向对象编程/00. 小结.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "1. 原型链 的大纲"
+              "title": "00. 小结 的大纲"
             }
           }
         ],
@@ -157,8 +171,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,54 +184,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bbcbbdc6200c1f0a",
+  "active": "b5aedd9c234ac965",
   "lastOpenFiles": [
-    "NEW JS/0. 补充/JS 术语.md",
-    "NEW JS/JS 术语.md",
-    "HTML + css/css属性深究/margin为负值时/衍生现象.md",
-    "HTML + css/css属性深究/margin为负值时/基础现象.md",
-    "HTML + css/css属性深究/margin为负值时/Pasted image 20251017161135.png",
-    "HTML + css/css属性深究/margin为负值时/Pasted image 20251017161116.png",
-    "HTML + css/css属性深究/margin为负值时/Pasted image 20251017160629.png",
-    "HTML + css/css属性深究/margin为负值时/Pasted image 20251017160626.png",
-    "HTML + css/css属性深究/margin为负值时",
-    "HTML + css/css属性深究",
-    "JavaScript学习笔记/ECMAScript JavaScript语言基础/3. 对象/1. 概念.md",
-    "JavaScript学习笔记/ECMAScript JavaScript语言基础/1. JS基础/6. 类.md",
-    "JavaScript学习笔记/ECMAScript JavaScript语言基础/1. JS基础/5. 变量声明.md",
-    "JavaScript学习笔记/ECMAScript JavaScript语言基础/1. JS基础/3. 数据类型.md",
-    "JavaScript学习笔记/ECMAScript JavaScript语言基础/1. JS基础/4. 比较运算.md",
-    "JavaScript学习笔记/ECMAScript JavaScript语言基础/1. JS基础/2. 输入和输出.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链.md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/2. 理解原型.md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/1. 原型模式.md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题/1. 其他原型语法.md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题/4. 原型的问题.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题/3. 原生对象原型.md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题/2. 原型的动态性.md",
-    "html.css图片/Pasted image 20260414150446.png",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/5. 对象迭代.md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题",
-    "NEW JS/5. 基本引用类型/3. 原始值包装类型/4. String.md",
-    "NEW JS/6. 集合引用类型/2. Array/5. 迭代器方法.md",
-    "NEW JS/6. 集合引用类型/4. Map/2. 顺序与迭代.md",
-    "NEW JS/6. 集合引用类型/6. set/2. 顺序与迭代.md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/6. 属性枚举顺序.md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/5. 原型 与 in 操作符.md",
+    "NEW JS/8. 对象、类与面向对象编程/4. 类/4. 继承.md",
+    "NEW JS/8. 对象、类与面向对象编程/00. 小结.md",
     "NEW JS/8. 对象、类与面向对象编程/1. 理解对象/4. 合并对象.md",
-    "NEW JS/8. 对象、类与面向对象编程/1. 理解对象/3. 读取属性的特性.md",
+    "NEW JS/0. 补充/8.0 扩展/内置符号属性.md",
+    "NEW JS/0. 补充/JS 术语.md",
+    "NEW JS/8. 对象、类与面向对象编程/4. 类/2. 类构造函数.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题/1. 其他原型语法.md",
+    "NEW JS/8. 对象、类与面向对象编程/4. 类/1. 类的定义.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/0. 原型链.md",
+    "NEW JS/8. 对象、类与面向对象编程/4. 类/3 实例、原型和类成员.md",
+    "Pasted image 20260416133516.png",
+    "NEW JS/8. 对象、类与面向对象编程/4. 类/3.1 类中的共享.md",
+    "NEW JS/3. 第三章 语言基础/3. 变量声明/1. var.md",
+    "html.css图片/Pasted image 20260415153352.png",
+    "html.css图片/textarea.png文本域标签.png",
+    "html.css图片/ul默认样式.png",
+    "html.css图片/Pasted image 20260414150446.png",
     "html.css图片/Pasted image 20260414131116.png",
     "html.css图片/Pasted image 20260414131112.png",
     "html.css图片/Pasted image 20260414131100.png",
+    "html.css图片/Pasted image 20260413112313.png",
+    "html.css图片/Pasted image 20260208172614.png",
+    "NEW JS/3. 第三章 语言基础/3. 变量声明/4. 声明风格最佳实践.md",
+    "NEW JS/3. 第三章 语言基础/3. 变量声明/2. let.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/5. 寄生式组合继承.md",
+    "NEW JS/8. 对象、类与面向对象编程/4. 类",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/4. 原型链的问题.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/3. 关于方法.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/1. 默认原型.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/2. 原型与继承关系.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/4. 寄生式继承.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/3. 组合继承.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/2. 盗用构造函数.md",
+    "NEW JS/0. 补充/8.0 扩展/call() 与 apply().md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/3. 关于原型的操作.md",
+    "NEW JS/3. 第三章 语言基础/4. 数据类型/8. Object 类型.md",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/2. 理解原型.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链",
+    "HTML + css/css属性深究/margin为负值时",
+    "HTML + css/css属性深究",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承",
+    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题",
     "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式",
     "NEW JS/8. 对象、类与面向对象编程/2. 创建对象",
     "NEW JS/8. 对象、类与面向对象编程/1. 理解对象/6. 增强的对象语法",
     "NEW JS/0. 补充/8.0 扩展",
-    "NEW JS/8. 对象、类与面向对象编程/1. 理解对象",
-    "NEW JS/8. 对象、类与面向对象编程",
-    "html.css图片/Pasted image 20260413112313.png",
-    "JavaScript学习笔记/Pasted image 20260412123928.png",
     "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas"
   ]
 }

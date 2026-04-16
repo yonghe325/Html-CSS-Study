@@ -2,11 +2,13 @@
 ## 🎯 核心作用
 **`call()` 和 `apply()` 用于显式指定函数执行时的 `this` 值**，并立即调用该函数。
 ## 📝 基本语法
+```js
 // call()：参数逐个传递
 func.call(thisArg, arg1, arg2, arg3, ...)
+
 // apply()：参数以数组形式传递
 func.apply(thisArg, [arg1, arg2, arg3, ...])
-
+```
 ## 🔍 核心区别
 
 | 方法        | 参数传递方式 | 性能       | 适用场景       |
