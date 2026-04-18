@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NEW JS/8. 对象、类与面向对象编程/00. 小结.md",
+                "file": "NEW JS/9. 代理与反射/1. 代理基础/8. 代理的缺陷.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00. 小结"
+              "title": "8. 代理的缺陷"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NEW JS/0. 补充/8.0 扩展/内置符号属性.md",
+                "file": "NEW JS/0. 补充/8.0 扩展/call() 与 apply().md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "内置符号属性"
+              "title": "call() 与 apply()"
             }
           }
         ]
@@ -54,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "constructor",
+                "query": "捕获不变式",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 294.50152587890625
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -109,17 +109,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NEW JS/4. 第四章 变量, 作用域与内存/2. 执行上下文 与 作用域/2. 上下文概念.md",
+                "file": "NEW JS/9. 代理与反射/1. 代理基础/8. 代理的缺陷.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "2. 上下文概念 的反向链接列表"
+              "title": "8. 代理的缺陷 的反向链接列表"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NEW JS/4. 第四章 变量, 作用域与内存/2. 执行上下文 与 作用域/2. 上下文概念.md",
+                "file": "NEW JS/0. 补充/8.0 扩展/函数签名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2. 上下文概念 的出链列表"
+              "title": "函数签名 的出链列表"
             }
           },
           {
@@ -157,21 +157,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NEW JS/8. 对象、类与面向对象编程/00. 小结.md",
+                "file": "NEW JS/0. 补充/8.0 扩展/函数签名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "00. 小结 的大纲"
+              "title": "函数签名 的大纲"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -186,19 +186,38 @@
   },
   "active": "b5aedd9c234ac965",
   "lastOpenFiles": [
-    "NEW JS/8. 对象、类与面向对象编程/4. 类/4. 继承.md",
-    "NEW JS/8. 对象、类与面向对象编程/00. 小结.md",
-    "NEW JS/8. 对象、类与面向对象编程/1. 理解对象/4. 合并对象.md",
-    "NEW JS/0. 补充/8.0 扩展/内置符号属性.md",
-    "NEW JS/0. 补充/JS 术语.md",
-    "NEW JS/8. 对象、类与面向对象编程/4. 类/2. 类构造函数.md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题/1. 其他原型语法.md",
-    "NEW JS/8. 对象、类与面向对象编程/4. 类/1. 类的定义.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/0. 原型链.md",
-    "NEW JS/8. 对象、类与面向对象编程/4. 类/3 实例、原型和类成员.md",
+    "NEW JS/9. 代理与反射/3. 代理模式/5. 数据绑定 与 可观察对象.md",
+    "NEW JS/9. 代理与反射/3. 代理模式/4. 函数与构造函数参数验证.md",
+    "NEW JS/9. 代理与反射/1. 代理基础/2. 定义捕获器.md",
+    "NEW JS/9. 代理与反射/1. 代理基础/0. 代理的概念.md",
+    "NEW JS/9. 代理与反射/3. 代理模式/0. 引言.md",
+    "NEW JS/9. 代理与反射/3. 代理模式/3. 属性验证.md",
+    "NEW JS/9. 代理与反射/3. 代理模式/2. 隐藏属性.md",
+    "NEW JS/9. 代理与反射/3. 代理模式/1. 跟踪属性访问.md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/6. deleteProperty().md",
+    "NEW JS/9. 代理与反射/3. 代理模式",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/0. Proxy 捕获器完整参考表.md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/13. construct().md",
+    "NEW JS/9. 代理与反射/1. 代理基础/4. 捕获器不变式.md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/10. isExtensible().md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/9. setPrototypeOf().md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/8. getPrototypeOf().md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/7. ownKeys().md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/5. getOwnPropertyDescriptor().md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/4. defineProperty().md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/3. has().md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/2. set().md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/1. get().md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/12. apply().md",
+    "NEW JS/9. 代理与反射/1. 代理基础/8. 代理的缺陷.md",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/4. 原型链的问题.md",
+    "NEW JS/9. 代理与反射/1. 代理基础/6. 使用反射API.md",
+    "NEW JS/0. 补充/9.0 扩展/内部槽位.md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法",
+    "NEW JS/9. 代理与反射/1. 代理基础",
+    "NEW JS/9. 代理与反射",
+    "NEW JS/0. 补充/9.0 扩展",
     "Pasted image 20260416133516.png",
-    "NEW JS/8. 对象、类与面向对象编程/4. 类/3.1 类中的共享.md",
-    "NEW JS/3. 第三章 语言基础/3. 变量声明/1. var.md",
     "html.css图片/Pasted image 20260415153352.png",
     "html.css图片/textarea.png文本域标签.png",
     "html.css图片/ul默认样式.png",
@@ -208,30 +227,11 @@
     "html.css图片/Pasted image 20260414131100.png",
     "html.css图片/Pasted image 20260413112313.png",
     "html.css图片/Pasted image 20260208172614.png",
-    "NEW JS/3. 第三章 语言基础/3. 变量声明/4. 声明风格最佳实践.md",
-    "NEW JS/3. 第三章 语言基础/3. 变量声明/2. let.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/5. 寄生式组合继承.md",
     "NEW JS/8. 对象、类与面向对象编程/4. 类",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/4. 原型链的问题.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/3. 关于方法.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/1. 默认原型.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/2. 原型与继承关系.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/4. 寄生式继承.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/3. 组合继承.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/2. 盗用构造函数.md",
-    "NEW JS/0. 补充/8.0 扩展/call() 与 apply().md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/3. 关于原型的操作.md",
-    "NEW JS/3. 第三章 语言基础/4. 数据类型/8. Object 类型.md",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/2. 理解原型.md",
     "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链",
     "HTML + css/css属性深究/margin为负值时",
     "HTML + css/css属性深究",
     "NEW JS/8. 对象、类与面向对象编程/3. 继承",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式/7. 其他关于原型的问题",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象/4. 原型模式",
-    "NEW JS/8. 对象、类与面向对象编程/2. 创建对象",
-    "NEW JS/8. 对象、类与面向对象编程/1. 理解对象/6. 增强的对象语法",
-    "NEW JS/0. 补充/8.0 扩展",
     "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas"
   ]
 }

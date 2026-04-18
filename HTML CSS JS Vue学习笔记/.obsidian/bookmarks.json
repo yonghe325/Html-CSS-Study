@@ -6,6 +6,12 @@
       "items": [
         {
           "type": "file",
+          "ctime": 1776484008675,
+          "path": "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/12. apply().md",
+          "title": "自定义apply()会被哪个捕获器拦截?"
+        },
+        {
+          "type": "file",
           "ctime": 1770863252855,
           "path": "NEW JS/5. 基本引用类型/3. 原始值包装类型/4. String.md",
           "title": "编码策略没听懂"
