@@ -4,35 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a864bbc00f7dc73b",
+        "id": "b8a5678dd24be01d",
         "type": "tabs",
         "children": [
           {
-            "id": "b5aedd9c234ac965",
+            "id": "00f38c35c94c3e66",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NEW JS/9. 代理与反射/1. 代理基础/8. 代理的缺陷.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "8. 代理的缺陷"
-            }
-          },
-          {
-            "id": "2e9b5b7b26344ad5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NEW JS/0. 补充/8.0 扩展/call() 与 apply().md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "call() 与 apply()"
+              "title": "新标签页"
             }
           }
         ]
@@ -54,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "捕获不变式",
+                "query": "map",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.50152587890625
+    "width": 219.50152587890625
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -109,8 +91,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NEW JS/9. 代理与反射/1. 代理基础/8. 代理的缺陷.md",
-                "collapseAll": true,
+                "file": "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/4. 串行期约合成.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -119,7 +101,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "8. 代理的缺陷 的反向链接列表"
+              "title": "4. 串行期约合成 的反向链接列表"
             }
           },
           {
@@ -157,16 +139,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NEW JS/0. 补充/8.0 扩展/函数签名.md",
+                "file": "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/4. 串行期约合成.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "函数签名 的大纲"
+              "title": "4. 串行期约合成 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -184,54 +167,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b5aedd9c234ac965",
+  "active": "00f38c35c94c3e66",
   "lastOpenFiles": [
-    "NEW JS/9. 代理与反射/3. 代理模式/5. 数据绑定 与 可观察对象.md",
-    "NEW JS/9. 代理与反射/3. 代理模式/4. 函数与构造函数参数验证.md",
-    "NEW JS/9. 代理与反射/1. 代理基础/2. 定义捕获器.md",
-    "NEW JS/9. 代理与反射/1. 代理基础/0. 代理的概念.md",
-    "NEW JS/9. 代理与反射/3. 代理模式/0. 引言.md",
-    "NEW JS/9. 代理与反射/3. 代理模式/3. 属性验证.md",
-    "NEW JS/9. 代理与反射/3. 代理模式/2. 隐藏属性.md",
-    "NEW JS/9. 代理与反射/3. 代理模式/1. 跟踪属性访问.md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/6. deleteProperty().md",
-    "NEW JS/9. 代理与反射/3. 代理模式",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/0. Proxy 捕获器完整参考表.md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/13. construct().md",
-    "NEW JS/9. 代理与反射/1. 代理基础/4. 捕获器不变式.md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/10. isExtensible().md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/9. setPrototypeOf().md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/8. getPrototypeOf().md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/7. ownKeys().md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/5. getOwnPropertyDescriptor().md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/4. defineProperty().md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/3. has().md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/2. set().md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/1. get().md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/12. apply().md",
-    "NEW JS/9. 代理与反射/1. 代理基础/8. 代理的缺陷.md",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链/4. 原型链的问题.md",
-    "NEW JS/9. 代理与反射/1. 代理基础/6. 使用反射API.md",
-    "NEW JS/0. 补充/9.0 扩展/内部槽位.md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法",
-    "NEW JS/9. 代理与反射/1. 代理基础",
-    "NEW JS/9. 代理与反射",
-    "NEW JS/0. 补充/9.0 扩展",
-    "Pasted image 20260416133516.png",
+    "NEW JS/11. 期约与异步函数/00. 小结.md",
+    "NEW JS/11. 期约与异步函数/3. 异步函数/2. await 关键字.md",
+    "NEW JS/11. 期约与异步函数/4. 异步函数策略/4. 栈追踪与内存管理.md",
+    "NEW JS/11. 期约与异步函数/4. 异步函数策略/3. 串行执行期约.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/4. 串行期约合成.md",
+    "NEW JS/11. 期约与异步函数/4. 异步函数策略/2. 利用平行执行.md",
+    "NEW JS/0. 补充/6.0 扩展/2. 映射函数.md",
+    "NEW JS/6. 集合引用类型/8. 迭代与扩展操作.md",
+    "NEW JS/6. 集合引用类型/2. Array/13. 迭代方法.md",
+    "NEW JS/11. 期约与异步函数/4. 异步函数策略/1. 实现sleep.md",
+    "NEW JS/11. 期约与异步函数/3. 异步函数/4. 停止和恢复执行.md",
+    "NEW JS/11. 期约与异步函数/4. 异步函数策略",
+    "NEW JS/11. 期约与异步函数/3. 异步函数/3. awith 关键字的限制.md",
+    "NEW JS/11. 期约与异步函数/3. 异步函数/1. async 关键字.md",
+    "NEW JS/11. 期约与异步函数/3. 异步函数/1. 异步函数.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/4. 期约扩展/2. 期约进度通知.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/4. 期约扩展/1. 取消期约.md",
+    "html.css图片/Pasted image 20260422093228.png",
+    "NEW JS/11. 期约与异步函数/2. 期约/4. 期约扩展",
+    "NEW JS/0. 补充/11. 扩展/reduce()方法.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/6. 期约的实例方法/8. 拒绝期约 与 拒绝错误信息 的 处理.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/3. Promise.all() 与 Promise.race().md",
+    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/5. 同步 异步执行的二元性.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/2. 期约图.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/6. 期约的实例方法/6. 临近处理程序的执行顺序.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/6. 期约的实例方法/5. 非重入期约方法.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/6. 期约的实例方法/2. then()方法.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/3. 通过执行函数控制期约状态.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/1. 期约连锁.md",
+    "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成",
+    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/6. 期约的实例方法",
+    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础",
+    "NEW JS/11. 期约与异步函数/1. 异步编程/2. 以往的异步编程模式",
+    "NEW JS/0. 补充/11. 扩展",
+    "NEW JS/11. 期约与异步函数/3. 异步函数",
+    "NEW JS/11. 期约与异步函数/2. 期约",
+    "NEW JS/11. 期约与异步函数/1. 异步编程",
+    "html.css图片/Pasted image 20260419143658.png",
+    "html.css图片/Pasted image 20260419140306.png",
+    "html.css图片/Pasted image 20260416133516.png",
     "html.css图片/Pasted image 20260415153352.png",
     "html.css图片/textarea.png文本域标签.png",
     "html.css图片/ul默认样式.png",
     "html.css图片/Pasted image 20260414150446.png",
     "html.css图片/Pasted image 20260414131116.png",
     "html.css图片/Pasted image 20260414131112.png",
-    "html.css图片/Pasted image 20260414131100.png",
-    "html.css图片/Pasted image 20260413112313.png",
-    "html.css图片/Pasted image 20260208172614.png",
-    "NEW JS/8. 对象、类与面向对象编程/4. 类",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/1. 原型链",
-    "HTML + css/css属性深究/margin为负值时",
-    "HTML + css/css属性深究",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承",
     "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas"
   ]
 }
