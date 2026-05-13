@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>数学</th>
+        <th>语文</th>
+        <th>英语</th>
+      </tr>
+    </thead>
+    <tbody id="tb">
+
+    </tbody>
+  </table>
+
+  <script>
+    const tb = document.getElementById("tb")
+    setInterval(() => {
+      const tr = document.createElement("tr")
+      for (let index = 0; index < 3; index++) {
+        const td = document.createElement("td")
+        td.textContent = `${(index + 1) * 10}`
+        tr.appendChild(td)
+      }
+      tb.appendChild(tr)
+    }, 1000);
+
+  </script>
+</body>
+
+</html>

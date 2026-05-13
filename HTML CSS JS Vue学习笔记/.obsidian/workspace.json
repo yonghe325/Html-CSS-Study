@@ -4,20 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "b8a5678dd24be01d",
+        "id": "eb0601ebaa7c54a8",
         "type": "tabs",
         "children": [
           {
-            "id": "00f38c35c94c3e66",
+            "id": "94aef49009e87eca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "NEW JS/14. DOM/3.  MutationObserver接口/2.  MutationObserverInit与 观察范围/2. 观察字符数据.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2. 观察字符数据"
+            }
+          },
+          {
+            "id": "8da19246699973e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NEW JS/14. DOM/3.  MutationObserver接口/2.  MutationObserverInit与 观察范围/0. MutationObserverInit 与观察范围.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0. MutationObserverInit 与观察范围"
+            }
+          },
+          {
+            "id": "6db7cd173532ce93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NEW JS/14. DOM/3.  MutationObserver接口/4. 性能 内存 与 垃圾回收.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4. 性能 内存 与 垃圾回收"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -36,11 +69,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "map",
+                "query": "eval",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
@@ -75,7 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 219.50152587890625
+    "width": 325.50152587890625
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -91,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/4. 串行期约合成.md",
+                "file": "NEW JS/14. DOM/1. 节点层级/2. Document类型.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +134,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "4. 串行期约合成 的反向链接列表"
+              "title": "2. Document类型 的反向链接列表"
             }
           },
           {
@@ -110,12 +143,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NEW JS/0. 补充/8.0 扩展/函数签名.md",
+                "file": "NEW JS/14. DOM/1. 节点层级/2. Document类型.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "函数签名 的出链列表"
+              "title": "2. Document类型 的出链列表"
             }
           },
           {
@@ -139,13 +172,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/4. 串行期约合成.md",
+                "file": "NEW JS/14. DOM/1. 节点层级/2. Document类型.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "4. 串行期约合成 的大纲"
+              "title": "2. Document类型 的大纲"
             }
           }
         ],
@@ -167,54 +200,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "00f38c35c94c3e66",
+  "active": "6db7cd173532ce93",
   "lastOpenFiles": [
-    "NEW JS/11. 期约与异步函数/00. 小结.md",
-    "NEW JS/11. 期约与异步函数/3. 异步函数/2. await 关键字.md",
-    "NEW JS/11. 期约与异步函数/4. 异步函数策略/4. 栈追踪与内存管理.md",
-    "NEW JS/11. 期约与异步函数/4. 异步函数策略/3. 串行执行期约.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/4. 串行期约合成.md",
-    "NEW JS/11. 期约与异步函数/4. 异步函数策略/2. 利用平行执行.md",
-    "NEW JS/0. 补充/6.0 扩展/2. 映射函数.md",
-    "NEW JS/6. 集合引用类型/8. 迭代与扩展操作.md",
-    "NEW JS/6. 集合引用类型/2. Array/13. 迭代方法.md",
-    "NEW JS/11. 期约与异步函数/4. 异步函数策略/1. 实现sleep.md",
-    "NEW JS/11. 期约与异步函数/3. 异步函数/4. 停止和恢复执行.md",
-    "NEW JS/11. 期约与异步函数/4. 异步函数策略",
-    "NEW JS/11. 期约与异步函数/3. 异步函数/3. awith 关键字的限制.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/3.  异步回调与记录队列/2. takeRecords()方法.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/4. 性能 内存 与 垃圾回收.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/3.  异步回调与记录队列/1. 记录队列.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/3.  异步回调与记录队列/0. 异步回调与记录队列.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/2.  MutationObserverInit与 观察范围/4. 观察子树.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/3.  异步回调与记录队列",
+    "NEW JS/14. DOM/3.  MutationObserver接口/2.  MutationObserverInit与 观察范围/0. MutationObserverInit 与观察范围.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/2.  MutationObserverInit与 观察范围/3. 观察子节点.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/2.  MutationObserverInit与 观察范围/2. 观察字符数据.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/2.  MutationObserverInit与 观察范围/未命名",
+    "NEW JS/14. DOM/3.  MutationObserver接口/2.  MutationObserverInit与 观察范围/1. 观察属性.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/0. MutationObserver接口.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/1. 基本用法/1. observe()方法.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/1. 基本用法/5. 重用MutationObserver.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/2.  MutationObserverInit与 观察范围",
+    "NEW JS/14. DOM/3.  MutationObserver接口/2.  MutationObserverInit",
+    "NEW JS/14. DOM/3.  MutationObserver接口/1. 基本用法/3. disconnect()方法 终止观察.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/1. 基本用法/4. 复用MutationObserver.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/1. 基本用法/2.  回调与 MutationRecord.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口/1. 基本用法",
+    "NEW JS/14. DOM/2. DOM编程/4. 使用NodeList.md",
+    "NEW JS/14. DOM/3.  MutationObserver接口",
+    "html.css图片/Pasted image 20260512110155.png",
+    "NEW JS/0. 补充/14. 扩展/HTMLCollection 对象 与 NodeList对象.md",
+    "NEW JS/14. DOM/2. DOM编程/3. 操作表格.md",
+    "NEW JS/14. DOM/2. DOM编程/2. 动态样式.md",
+    "NEW JS/14. DOM/2. DOM编程/1. 动态脚本.md",
+    "NEW JS/0. 补充/14. 扩展/eval()方法.md",
+    "NEW JS/2. 第二章 script元素/1. script 元素.md",
+    "NEW JS/4. 第四章 变量, 作用域与内存/2. 执行上下文 与 作用域/2. 上下文.md",
+    "NEW JS/2. 第二章 script元素/2. 行内代码 与 外部文件.md",
     "NEW JS/11. 期约与异步函数/3. 异步函数/1. async 关键字.md",
-    "NEW JS/11. 期约与异步函数/3. 异步函数/1. 异步函数.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/4. 期约扩展/2. 期约进度通知.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/4. 期约扩展/1. 取消期约.md",
+    "NEW JS/0. 补充/14. 扩展/属性节点  Attr 对象.md",
+    "NEW JS/14. DOM/2. DOM编程",
+    "NEW JS/14. DOM/1. 节点层级/9.  Attr类型",
+    "NEW JS/14. DOM/1. 节点层级/8.  DocumentFragment类型",
+    "NEW JS/14. DOM/1. 节点层级/7.  DocumentType类型",
+    "html.css图片/Pasted image 20260512110133.png",
+    "html.css图片/Pasted image 20260512110113.png",
+    "html.css图片/Pasted image 20260511141451.png",
+    "html.css图片/Pasted image 20260511141432.png",
+    "html.css图片/Pasted image 20260511134635.png",
+    "html.css图片/Pasted image 20260511091626.png",
+    "html.css图片/Pasted image 20260511091622.png",
+    "html.css图片/Pasted image 20260511084003.png",
     "html.css图片/Pasted image 20260422093228.png",
-    "NEW JS/11. 期约与异步函数/2. 期约/4. 期约扩展",
-    "NEW JS/0. 补充/11. 扩展/reduce()方法.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/6. 期约的实例方法/8. 拒绝期约 与 拒绝错误信息 的 处理.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/3. Promise.all() 与 Promise.race().md",
-    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/5. 同步 异步执行的二元性.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/2. 期约图.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/6. 期约的实例方法/6. 临近处理程序的执行顺序.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/6. 期约的实例方法/5. 非重入期约方法.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/6. 期约的实例方法/2. then()方法.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/3. 通过执行函数控制期约状态.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成/1. 期约连锁.md",
-    "NEW JS/11. 期约与异步函数/2. 期约/3. 期约连锁 与 期约合成",
-    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础/6. 期约的实例方法",
-    "NEW JS/11. 期约与异步函数/2. 期约/2. 期约基础",
-    "NEW JS/11. 期约与异步函数/1. 异步编程/2. 以往的异步编程模式",
-    "NEW JS/0. 补充/11. 扩展",
-    "NEW JS/11. 期约与异步函数/3. 异步函数",
-    "NEW JS/11. 期约与异步函数/2. 期约",
-    "NEW JS/11. 期约与异步函数/1. 异步编程",
-    "html.css图片/Pasted image 20260419143658.png",
-    "html.css图片/Pasted image 20260419140306.png",
-    "html.css图片/Pasted image 20260416133516.png",
-    "html.css图片/Pasted image 20260415153352.png",
-    "html.css图片/textarea.png文本域标签.png",
-    "html.css图片/ul默认样式.png",
-    "html.css图片/Pasted image 20260414150446.png",
-    "html.css图片/Pasted image 20260414131116.png",
-    "html.css图片/Pasted image 20260414131112.png",
     "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas"
   ]
 }

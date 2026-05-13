@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>a1</li>
+    <li>a2</li>
+    <li>a3</li>
+  </ul>
+  <ul><li>b1</li><li>b2</li><li>b3</li></ul>
+  <script>
+    const a = document.getElementsByTagName("ul")[0]
+    const b = document.getElementsByTagName("ul")[1]
+    // console.log("a->");
+    // for (let i = 0; i < a.childNodes.length; i++) {
+    //   console.log(a.childNodes[i]);
+    // }
+    // console.log("b->");
+    // for (let i = 0; i < a.childNodes.length; i++) {
+    //   console.log(b.childNodes[i]);
+    // }
+
+    for (let i = 0, len = a.childNodes.length; i < len; ++i) {
+      if (a.childNodes[i].nodeType == 1) {
+        // 执行某个操作
+        console.log(a.childNodes[i]);
+      }
+    }
+    for (let i = 0, len = b.childNodes.length; i < len; ++i) {
+      if (b.childNodes[i].nodeType != 1) {
+        // 执行某个操作
+        console.log(b.childNodes[i]);
+      }
+    }
+
+  </script>
+</body>
+</html>

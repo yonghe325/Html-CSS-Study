@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="hh">
+
+
+  </div>
+  <script>
+    async function sleep(delay) {
+      return new Promise((resolve,reject )=>{
+        setTimeout(() => {
+          console.log("苏醒")
+          resolve()
+        }, delay);
+      })
+    }
+
+    // const id = setInterval(() => {
+    //   let oWight = window.outerWidth
+    //   let oHight = window.outerHeight
+    //   let iWight = window.innerWidth
+    //   let iHight = window.innerHeight
+    //   console.log("窗口宽度", oWight)
+    //   console.log("窗口高度", oHight)
+    //   console.log("页面视口宽度", iWight)
+    //   console.log("页面视口高度", iHight)
+    //   console.log("页面视图宽度", document.body.clientWidth)
+    //   console.log("页面视图高度", document.body.clientHeight)
+    //   console.log("整个页面的宽度",scrollWidth)
+    //   console.log("整个页面的高度",scrollHeight)
+    // }, 2000)
+      (async function foo() {
+        await sleep(2000)
+        window.resizeTo(500,500)
+        await sleep(2000)
+        window.resizeTo(600,600)
+      }
+      )();
+
+
+  </script>
+  <style>
+    .hh {
+      /* margin: 0 auto; */
+      height: 5000px;
+      width: 100%;
+
+      background-color: red;
+
+    }
+    body{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  </style>
+
+</body>
+
+</html>

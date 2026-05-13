@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="h"></div>
+  <script>
+    async function sleep(delay) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("苏醒")
+          resolve()
+        }, delay)
+      })
+    }
+      setInterval(async function(){
+        window.scrollTo({
+          left: 0,
+          top: 500,
+          behavior: "smooth"
+        })
+        await sleep(500)
+        window.scrollTo({
+          left: 0,
+          top: 2000,
+          behavior: "smooth"
+        })
+        await sleep(500)
+        window.scrollTo({
+          left: 0,
+          top: 5000,
+          behavior: "smooth"
+        })
+        await sleep(500)
+        window.scrollTo({
+          left: 0,
+          top: 0,
+          behavior: "smooth"
+        })
+      }, 2500)
+
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .h {
+      margin: 0 auto;
+      height: 5000px;
+      width: 200px;
+      background-color: red;
+    }
+  </style>
+
+</body>
+
+</html>

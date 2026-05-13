@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <span id="sp" data-www="123" >123</span>
+  <script>
+    const span = document.getElementById("sp")
+      // 获取节点    
+    function outputAttributes(element) {
+      let pairs = []
+      for (let i = 0, len = element.attributes.length; i < len; ++i) {
+        const attribute = element.attributes[i]
+        pairs.push(`${attribute.nodeName}="${attribute.nodeValue}"`)
+      }
+      return pairs.join(" ")
+    }
+    console.log(outputAttributes(span));
+     
+
+  </script>
+</body>
+
+</html>

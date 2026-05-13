@@ -43,6 +43,18 @@
       "ctime": 1776315326440,
       "path": "NEW JS/8. 对象、类与面向对象编程/4. 类/3 实例、原型和类成员.md",
       "title": "所有的迭代器与生成器方法"
+    },
+    {
+      "type": "file",
+      "ctime": 1778475949174,
+      "path": "NEW JS/14. DOM/1. 节点层级/1. Node类型/0. Node类型.md",
+      "title": "未完"
+    },
+    {
+      "type": "file",
+      "ctime": 1778636049950,
+      "path": "NEW JS/14. DOM/2. DOM编程/1. 动态脚本.md",
+      "title": "链接到第17章"
     }
   ]
 }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let stateObject = { foo: "bar" }
+    history.pushState(stateObject, "My title", "baz.html")
+    window.addEventListener("popstate", (event) => {
+      let state = event.state
+      if (state) { // 第一个页面加载时状态是 null
+        console.log(state)
+      }
+    });
+  </script>
+</body>
+
+</html>
