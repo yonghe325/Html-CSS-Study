@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .frist {
+      background-color: red;
+    }
+
+    .second {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <div class="frist">
+      <p>这是第一个段落</p>
+    </div>
+    <div class="second">
+      <p>这是第二个段落</p>
+    </div>
+  </div>
+  <div id="buts">
+    <button type="button" id="one">第一段前添加</button>
+    <button type="button" id="two">第一段后添加</button>
+    <button type="button" id="three">第二段前添加</button>
+    <button type="button" id="four">第二段后添加</button>
+  </div>
+  <script>
+    const but = document.querySelector('#buts')
+    const frist = document.querySelector('.frist')
+    const second = document.querySelector('.second')
+    
+    const buts = but.querySelectorAll("button")
+    let firstNum = 0
+    let secondNum = 0
+    console.log(buts)
+    buts[0].addEventListener("click", () => {
+      frist.insertAdjacentHTML("afterbegin", `<p> ${firstNum++} </p>`)
+    })
+    buts[1].addEventListener("click", () => {
+      frist.insertAdjacentHTML('beforeend', `<p> ${firstNum++} </p>`)
+    })
+    buts[2].addEventListener("click", () => {
+      second.insertAdjacentHTML('afterbegin', `<p> ${secondNum++} </p>`)
+    })
+    buts[3].addEventListener("click", () => {
+      second.insertAdjacentHTML('beforeend', `<p> ${secondNum++} </p>`)
+    })
+  </script>
+
+</body>
+
+</html>

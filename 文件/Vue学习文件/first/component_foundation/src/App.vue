@@ -1,5 +1,5 @@
 <script setup>
-import ActiveComponent from './components/Custom Directives/new02.vue'
+import ActiveComponent from './components/Image.vue'
 </script>
 <template>
   <ActiveComponent />

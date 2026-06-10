@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    document.body.innerHTML = ''
+    const observer = new MutationObserver((mutationRecords) => console.log(mutationRecords))
+    document.body.appendChild(document.createElement('div'))
+    observer.observe(document.body, { attributes: true, subtree: true });
+    document.body.firstChild.setAttribute('foo', 'bar');
+    
+  </script>
+  <style>
+    .c01 {
+      margin: 0 auto;
+      height: 500px;
+      width: 500px;
+      background-color: red;
+    }
+  </style>
+</body>
+
+</html>

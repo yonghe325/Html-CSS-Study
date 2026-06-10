@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="div01">
+    <div class="div021">
+      <p>
+        <strong>1111</strong>
+      </p>
+      <span class="sp01">
+        2222
+      </span>
+    </div>
+    <div class="div022">
+      <button type="button" class="but01">添加span元素</button>
+      <button type="button" class="but02">移除span元素</button>
+
+    </div>
+  </div>
+</body>
+<script>
+  function createElementWithClass(tagName, className, contents) {
+    const element = document.createElement(tagName)
+    if (className) element.className = className
+    element.innerHTML = contents
+    return element
+  }
+  const addElementObvers = new MutationObserver((MutationRecords) => console.log(MutationRecords))
+  const div01 = document.querySelector('.div01')
+  let ids = 0
+  div01.querySelector('.but01').addEventListener('click', () => {
+    div01.querySelector('.div021').appendChild(createElementWithClass('span', 'sp02', ids))
+    ids++
+  })
+  // 添加元素
+
+  div01.querySelector('.but02').addEventListener('click', () => {
+    const container = div01.querySelector('.div021')
+    // 如果存在最后一个元素，就删除
+    if (container.lastElementChild.className == 'sp02') {
+      container.lastElementChild.remove()
+      ids--
+    }
+  })
+  // 移除元素
+  addElementObvers.observe(div01, { attributes: true, subtree: true, childList: true })
+</script>
+<style>
+  .sp02 {
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+  }
+</style>
+
+</html>

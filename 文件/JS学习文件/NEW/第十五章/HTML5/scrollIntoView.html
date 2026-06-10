@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .active {
+      /* background-color: red; */
+      border:  4px solid red;
+    }
+
+    .content div {
+      margin: 0 auto;
+      width: 50px;
+      height: 200px;
+      border-bottom: 2px solid black;
+      background-color: yellow;
+    }
+
+
+
+    .but {
+      position: fixed;
+      left: 50px;
+      top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <button type="button" class="but">随机跳转</button>
+  <div class="content">
+
+  </div>
+
+  <script>
+    let x = 50
+    const content = document.querySelector(".content")
+    let ItemHtml = ""
+    for (let i = 0; i < x; i++) {
+      ItemHtml += `<div class="Item-${i}">${i}</div>`
+    }
+    content.innerHTML = ItemHtml
+    // 放入方块
+    const divs = content.querySelectorAll("div")
+    let random = Math.floor((Math.random() * 100) % divs.length)
+    console.log(divs)
+    document.querySelector(".but").addEventListener("click", () => {
+      console.log(random)
+      const currentActive = content.querySelector(".active")
+      if (currentActive) {
+        currentActive.classList.remove("active")
+      }
+      divs[random].scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })
+      divs[random].classList.add("active")
+      random = Math.floor((Math.random() * 100) % divs.length)
+    })
+  </script>
+</body>
+
+</html>

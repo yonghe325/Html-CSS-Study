@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="content">
+    <span>这是第一段</span>
+    <ul>
+      <li>Item 123</li>
+      <li>Item 456</li>
+      <li>Item 789</li>
+    </ul>
+  </div>
+  <script>
+    let id = setTimeout(() => {
+      const div = document.querySelector(".content")
+      div.outerHTML = "<p>This is a paragraph.</p>"
+    }, 1000);
+
+
+  </script>
+</body>
+
+</html>

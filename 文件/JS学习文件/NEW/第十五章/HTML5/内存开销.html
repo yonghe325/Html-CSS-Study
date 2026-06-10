@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="buts">
+    <button type="button" id="start1">遍历开始</button>
+    <button type="button" id="start2">字符串开始</button>
+    <button type="button" id="start3">映射开始</button>
+    <button type="button" id="record">重置</button>
+  </div>
+  <ul>
+  </ul>
+
+  <script>
+    const ul = document.querySelector("ul")
+    let values = []
+    for (let i = 0; i < 1000; i++) values.push(i)
+    let datestart
+
+    document.querySelector("#start1").addEventListener("click", () => {
+      datestart = Date.now()
+      for (const value in values) {
+        ul.innerHTML += `<li>${value}</li>`
+      }
+      console.log(datestart - Date.now())
+    })
+    document.querySelector("#start2").addEventListener("click", () => {
+      datestart = Date.now()
+      let itemsHtml = ""
+      for (const value in values) {
+        itemsHtml += `<li>${value}</li>`
+      }
+      ul.innerHTML = itemsHtml
+      console.log(datestart - Date.now())
+    })
+    document.querySelector("#start3").addEventListener("click", () => {
+      datestart = Date.now()
+
+      ul.innerHTML = values.map(value => `<li>${value}</li>`).join('')
+
+      console.log(datestart - Date.now())
+    })
+    document.querySelector("#record").addEventListener("click", () => {
+      ul.innerHTML = ""
+    })
+  </script>
+</body>
+
+</html>
