@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      border: 2px solid black;
+      border-radius: 50%;
+      box-shadow: 5px 5px 15px rgb(180, 173, 173);
+    }
+
+    .div01 {
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    .div02 {
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+
+    .div03 {
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="border: none;box-shadow: none;" class="big">
+    <div class="div01"></div>
+    <div class="div02"></div>
+    <div class="div03"></div>
+  </div>
+
+  <script>
+    const BigDiv = document.querySelector(".big")
+    for (let index = 0; index < BigDiv.children.length; index++) {
+      const child = BigDiv.children[index]
+      const computedStyle = window.getComputedStyle(child)
+
+      console.log(`=== 第 ${index + 1} 个子元素 ===`)
+      console.log(`类名: ${child.className}`)
+      console.log(`背景色: ${computedStyle.backgroundColor}`)
+      console.log(`宽度: ${computedStyle.width}`)
+      console.log(`高度: ${computedStyle.height}`)
+      console.log(`边框: ${computedStyle.border}`)
+      console.log(`圆角: ${computedStyle.borderRadius}`)
+      console.log(`阴影: ${computedStyle.boxShadow}`)
+    }
+
+    
+  </script>
+</body>
+
+</html>

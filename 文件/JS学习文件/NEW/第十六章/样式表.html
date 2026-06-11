@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .big div {
+      border: 2px solid black;
+      border-radius: 50%;
+      box-shadow: 5px 5px 15px rgb(180, 173, 173);
+    }
+
+    .div01 {
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    .div02 {
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+
+    .div03 {
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+    }
+
+    .div04 {
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+    }
+
+    .div05 {
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+
+    .div06 {
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="buts">
+    <button type="button">随机圆角</button>
+    <button type="button">随机大小</button>
+    <button type="button">随机颜色</button>
+    <button type="button">全部随机</button>
+
+  </div>
+  <div style="border: none;box-shadow: none;" class="big">
+    <div class="div01"></div>
+    <div class="div02"></div>
+    <div class="div03"></div>
+    <div class="div04"></div>
+    <div class="div05"></div>
+    <div class="div06"></div>
+  </div>
+
+  <script>
+    const buts = document.querySelectorAll("button")
+    const Sheet = document.styleSheets[0]
+
+    function f01() {
+      for (let i = 1; i < 7; i++) {
+        Sheet.cssRules[i].style.borderRadius = `${Math.floor(Math.random() * 100 % 51)}%`
+      }
+    }
+    function f02() {
+      for (let i = 1; i < 7; i++) {
+        let size = `${Math.random() * 300}px`
+        Sheet.cssRules[i].style.width = size
+        Sheet.cssRules[i].style.width = size
+      }
+    }
+    function f03() {
+      for (let i = 1; i < 7; i++) {
+        Sheet.cssRules[i].style.backgroundColor = `rgb(${Math.random() * 256},${Math.random() * 256},${Math.random() * 256}) `
+      }
+    }
+    function f04() {
+      f01()
+      f02()
+      f03()
+    }
+    buts[0].addEventListener("click", () => f01())
+    buts[1].addEventListener("click", () => f02())
+    buts[2].addEventListener("click", () => f03())
+    buts[3].addEventListener("click", () => f04())
+    setInterval(() => {
+      f04()
+    }, 400)
+
+    // for (let i = 0; i < document.styleSheets.length; i++) {
+    //   const Sheet = document.styleSheets[i]
+    //   // 得到样式表
+    //   const rules = Sheet.cssRules
+    //   // 得到规则集合
+    //   for (let j = 0; j < rules.length; j++) {
+    //     const curRule = rules[j]
+    //     console.log(curRule.selectorText)
+    //     console.log(curRule.style.cssText)
+    //   }
+    // }
+  </script>
+</body>
+
+</html>

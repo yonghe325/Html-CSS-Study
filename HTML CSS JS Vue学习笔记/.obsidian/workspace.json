@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化/2. Document 的变化.md",
+                "file": "NEW JS/14. DOM/2. DOM编程/2. 动态样式.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Document 的变化"
+              "title": "2. 动态样式"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NEW JS/14. DOM/1. 节点层级/1. Node类型/4. 其他方法.md",
+                "file": "NEW JS/16. DOM2 与 DOM3/2. 样式/3. 元素尺寸/3. 滚动尺寸.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. 其他方法"
+              "title": "3. 滚动尺寸"
             }
           },
           {
@@ -41,15 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/1. XML的命名空间/4. NamedNodeMap 的变化.md",
+                "file": "NEW JS/15. DOM扩展/1. Selectors API/2. querySelectorAll() 方法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4. NamedNodeMap 的变化"
+              "title": "2. querySelectorAll() 方法"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -68,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cloneNode",
+                "query": "item",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,7 +108,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242.50152587890625
+    "width": 234.50152587890625
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -123,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NEW JS/14. DOM/1. 节点层级/2. Document类型.md",
+                "file": "NEW JS/9. 代理与反射/1. 代理基础/8. 代理的缺陷.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +134,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "2. Document类型 的反向链接列表"
+              "title": "8. 代理的缺陷 的反向链接列表"
             }
           },
           {
@@ -180,8 +181,7 @@
               "title": "2. Document类型 的大纲"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,44 +199,47 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b33ac669fa2db170",
+  "active": "c73b9c9019d09125",
   "lastOpenFiles": [
-    "NEW JS/14. DOM/1. 节点层级/1. Node类型/4. 其他方法.md",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化/2. Document 的变化.md",
-    "NEW JS/14. DOM/1. 节点层级/1. Node类型/3. 操纵节点.md",
-    "NEW JS/14. DOM/1. 节点层级/4. Text类型/2. 规范化文本节点.md",
-    "NEW JS/14. DOM/2. DOM编程/1. 动态脚本.md",
-    "NEW JS/14. DOM/1. 节点层级/4. Text类型/1. 创建文本节点.md",
-    "NEW JS/14. DOM/1. 节点层级/8.  DocumentFragment类型/0. DocumentFragment类型.md",
-    "NEW JS/14. DOM/1. 节点层级/2. Document类型/0. Document类型.md",
-    "NEW JS/14. DOM/1. 节点层级/3. Element类型/0. Element类型.md",
-    "NEW JS/14. DOM/1. 节点层级/2. Document类型/1. 文档子节点.md",
-    "NEW JS/14. DOM/1. 节点层级/1. Node类型/0. Node类型.md",
-    "NEW JS/14. DOM/1. 节点层级/1. Node类型/1. nodeName 与 nodeValue 属性.md",
+    "Pasted image 20260611142124.png",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/3. 元素尺寸/2. 客户端尺寸.md",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/3. 元素尺寸/3. 滚动尺寸.md",
+    "Pasted image 20260611141929.png",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/3. 元素尺寸/1. 偏移尺寸.md",
+    "Pasted image 20260611140652.png",
+    "Pasted image 20260611140618.png",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/2. 操作样式表/3.  deleteRule() 删除规则.md",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/3. 元素尺寸",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/2. 操作样式表/1. cssRule CSS规则.md",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/2. 操作样式表/2. insertRule() 创建规则.md",
+    "NEW JS/14. DOM/2. DOM编程/2. 动态样式.md",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/2. 操作样式表/0. 样式表.md",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/1. 存取元素样式/1. DOM样式属性与方法.md",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/1. 存取元素样式/2. 计算样式.md",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/2. 操作样式表",
+    "NEW JS/0. 补充/16. 扩展/4. 样式的类型.md",
+    "NEW JS/0. 补充/16. 扩展/1. 打开新文档.md",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/1. 存取元素样式/0. 元素的style属性.md",
+    "NEW JS/15. DOM扩展/1. Selectors API/2. querySelectorAll() 方法.md",
     "NEW JS/14. DOM/1. 节点层级/1. Node类型/2. 节点关系.md",
-    "NEW JS/14. DOM/1. 节点层级/3. Element类型/5. createElement() 创建元素.md",
-    "NEW JS/0. 补充/15. 扩展/1. DTD.md",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化/1. DocumentType 的变化.md",
-    "NEW JS/14. DOM/1. 节点层级/7.  DocumentType类型/0. DocumentType类型.md",
+    "NEW JS/0. 补充/16. 扩展/2. Blob对象.md",
+    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化/4. 内嵌窗格的变化.md",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式/1. 存取元素样式",
+    "NEW JS/16. DOM2 与 DOM3/2. 样式",
+    "NEW JS/0. 补充/16. 扩展/3. 内嵌窗格iframe.md",
+    "NEW JS/0. 补充/16. 扩展/3. 内嵌窗格iframe",
+    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化/3. Node的变化.md",
+    "NEW JS/9. 代理与反射/1. 代理基础/8. 代理的缺陷.md",
+    "NEW JS/9. 代理与反射/1. 代理基础/7. 代理 另一个 代理.md",
+    "NEW JS/9. 代理与反射/1. 代理基础/6. 使用反射API.md",
+    "NEW JS/9. 代理与反射/1. 代理基础/5. 可撤销代理.md",
+    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/0. Proxy 捕获器完整参考表.md",
+    "NEW JS/9. 代理与反射/1. 代理基础/4. 捕获器不变式.md",
+    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化/未命名",
+    "NEW JS/0. 补充/16. 扩展",
     "NEW JS/0. 补充/15. 扩展",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/1. XML的命名空间/4. NamedNodeMap 的变化.md",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/1. XML的命名空间/00. 所有关于命名空间的方法 与 属性.md",
     "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/1. XML的命名空间/3. Element 的变化.md",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/1. XML的命名空间/2. Document 的变化.md",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/1. XML的命名空间/1. Node的变化.md",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/1. XML的命名空间/0. XML的命名空间.md",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/未命名.md",
     "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/1. XML的命名空间",
-    "NEW JS/15. DOM扩展/3. HTML5/7. scrollIntoView/1. scrollIntoView()方法.md",
-    "NEW JS/14. DOM/1. 节点层级/5. Comment类型/0. Comment类型.md",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进",
-    "NEW JS/16. DOM2 与 DOM3",
-    "未命名",
-    "NEW JS/15. DOM扩展/4. 专有扩展",
-    "NEW JS/15. DOM扩展/3. HTML5/7. scrollIntoView",
-    "NEW JS/15. DOM扩展/3. HTML5/6. 插入标记",
-    "NEW JS/15. DOM扩展/3. HTML5/5. 自定义数据属性",
     "html.css图片/Pasted image 20260512110155.png",
     "html.css图片/Pasted image 20260512110133.png",
     "html.css图片/Pasted image 20260512110113.png",
@@ -244,9 +247,6 @@
     "html.css图片/Pasted image 20260511141432.png",
     "html.css图片/Pasted image 20260511134635.png",
     "html.css图片/Pasted image 20260511091626.png",
-    "html.css图片/Pasted image 20260511091622.png",
-    "html.css图片/Pasted image 20260511084003.png",
-    "html.css图片/Pasted image 20260422093228.png",
     "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas"
   ]
 }

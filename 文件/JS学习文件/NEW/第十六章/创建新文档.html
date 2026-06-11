@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 创建新XML文档
+    let xmlDocument = document.implementation.createDocument("", "root", null)
+
+    // 创建新的XHTML文档
+    let documentType = document.implementation.createDocumentType("html",
+      "-// W3C// DTD XHTML 1.0 Strict// EN",
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd")
+    let xhtmlDocument = document.implementation.createDocument("http://www.w3.org/1999/xhtml", "html", documentType)
+
+    // 创建完整的HTML文档
+    let newDoc = document.implementation.createHTMLDocument("new")
+
+    let meta = document.createElement("meta")
+    meta.setAttribute("charset", "UTF-8")
+    newDoc.head.appendChild(meta)
+    // 指定字符编码
+
+    let but = document.createElement("button")
+    but.innerHTML = "这是一个新按钮"
+    newDoc.body.appendChild(but)
+    // 添加新元素
+    
+    const serializer = new XMLSerializer()
+    const docString = serializer.serializeToString(newDoc)
+    // 序列化
+
+    const blob = new Blob([docString], { type: 'text/html' })
+    // 包装
+
+    const blobUrl = URL.createObjectURL(blob)
+    // 创建临时URL
+
+    const newWindow = window.open(blobUrl)
+    // 打开
+
+  </script>
+</body>
+
+</html>

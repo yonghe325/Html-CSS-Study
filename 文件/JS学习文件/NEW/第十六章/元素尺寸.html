@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .big div {
+      border: 2px solid black;
+      border-radius: 50%;
+      box-shadow: 5px 5px 15px rgb(180, 173, 173);
+    }
+
+    .div01 {
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    .div02 {
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+
+    .div03 {
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+    }
+
+    .div04 {
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+    }
+
+    .div05 {
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+
+    .div06 {
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="border: none;box-shadow: none;" class="big">
+    <div class="div01"></div>
+    <div class="div02"></div>
+    <div class="div03"></div>
+    <div class="div04"></div>
+    <div class="div05"></div>
+    <div class="div06"></div>
+  </div>
+
+  <script>
+    function getElementLeft(element) {
+      let actualLeft = element.offsetLeft
+      let current = element.offsetParent
+      while (current !== null) {
+        actualLeft += current.offsetLeft
+        current = current.offsetParent
+      }
+      return actualLeft
+    }
+    function getElementTop(element) {
+      let actualTop = element.offsetTop
+      let current = element.offsetParent
+      while (current !== null) {
+        actualTop += current.offsetTop
+        current = current.offsetParent
+      }
+      return actualTop
+    }
+    const bigDiv = document.querySelector(".big")
+    const divs = bigDiv.children
+    for (let i = 0; i < divs.length; i++) {
+      console.log(`第${i + 1}个div的offsetLeft = ${getElementLeft(divs[i])}`)
+      console.log(`第${i + 1}个div的offsetTop = ${getElementTop(divs[i])}`)
+    }
+  </script>
+</body>
+
+</html>
