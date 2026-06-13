@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="div01">
+    <div class="011"></div>
+    <div class="012">
+      <div class="0121">
+        <span>0</span>
+      </div>
+      <div class="0122"></div>
+      <div class="0123"></div>
+      <div class="0124">
+        <div class="01241"></div>
+        <div class="01242">
+          <span>1</span>
+        </div>
+        <div class="01243">
+          <div class="012431"></div>
+          <div class="012432">
+            <span>2</span>
+          </div>
+          <div class="012433"></div>
+          <div class="012434"></div>
+          <div class="012435"></div>
+          <div class="012436"></div>
+          <div class="012437"></div>
+          <div class="012438"></div>
+        </div>
+        <div class="01244"></div>
+        <div class="01245">
+          <span>3</span>
+
+        </div>
+      </div>
+      <div class="0125"></div>
+      <div class="0126"></div>
+    </div>
+    <div class="013"></div>
+    <div class="014"></div>
+    <div class="015"></div>
+  </div>
+  <div class="02">
+    <div class="021"></div>
+    <div class="022"></div>
+    <div class="023"></div>
+    <div class="024"></div>
+
+  </div>
+  <script>
+    const div01 = document.querySelector(".div01")
+    let filter = {
+      acceptNode: function (node) {
+        if (node.nodeType === Node.ELEMENT_NODE && node.tagName === "SPAN") {
+          return NodeFilter.FILTER_ACCEPT
+        }
+        return NodeFilter.FILTER_SKIP
+      }
+    }
+    let divIte = document.createNodeIterator(div01, NodeFilter.SHOW_ALL, filter, false)
+    let node = divIte.nextNode()
+    while (node !== null) {
+      console.log(node.innerHTML)
+      node = divIte.nextNode()
+    }
+  </script>
+</body>
+
+</html>

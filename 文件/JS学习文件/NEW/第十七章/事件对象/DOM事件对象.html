@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      list-style: none;
+    }
+
+    div {
+      transition: background-color 2s ease;
+    }
+
+    .big {
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      justify-items: center;
+      align-items: center;
+
+      grid-auto-flow: column;
+      width: 800px;
+      height: 800px;
+      background-color: red;
+    }
+
+    .small {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      justify-items: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      background-color: blue;
+    }
+
+    .inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+
+      justify-items: center;
+      align-items: center;
+
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+    }
+
+    .core {
+      width: 40px;
+      height: 40px;
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="big">
+    <div class="small">
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+    </div>
+    <div class="small">
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+    </div>
+    <div class="small">
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+    </div>
+    <div class="small">
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+      <div class="inner">
+        <div class="core"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const divs = document.querySelectorAll("div")
+    const sheet = document.styleSheets[0]
+    const rules = sheet.cssRules
+
+    const colorRandom = function (event) {
+      event.stopPropagation()
+      for (let i = 0; i < rules.length; i++) {
+        const rule = rules[i]
+        if (rule.selectorText == `.${event.currentTarget.className}`) {
+          rule.style.backgroundColor = `rgb(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`
+          break
+        }
+      }
+
+    }
+    for (let i = 0; i < divs.length; i++) {
+      // divs[i].addEventListener("mouseover", colorRandom, false)
+      divs[i].addEventListener("click", colorRandom, false)
+
+    }
+    // 为每个盒子添加事件处理程序
+
+  </script>
+</body>
+
+
+</html>

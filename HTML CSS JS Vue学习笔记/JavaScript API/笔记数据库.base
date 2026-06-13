@@ -1,0 +1,42 @@
+formulas:
+  未命名: ""
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - not:
+            - file.ext == "png"
+            - file.folder.startsWith("HTML + css")
+            - file.folder.contains("Vue")
+            - file.folder.startsWith("NEW JS/0. 补充")
+    order:
+      - file.name
+      - file.folder
+    sort:
+      - property: file.ext
+        direction: DESC
+  - type: cards
+    name: 视图
+    imageAspectRatio: 0.8
+  - type: list
+    name: 视图 2
+    filters:
+      and:
+        - not:
+            - file.ext == "png"
+            - file.folder.startsWith("HTML + css")
+            - file.folder.startsWith("NEW JS/0. 补充")
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.links
+    sort:
+      - property: file.folder
+        direction: ASC
+      - property: file.ctime
+        direction: ASC
+    markers: none
+    indentProperties: true
+    separator: /

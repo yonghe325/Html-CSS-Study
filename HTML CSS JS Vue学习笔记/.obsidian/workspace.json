@@ -4,49 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "34e5fe3fed5add04",
+        "id": "739dd7cd1abe31be",
         "type": "tabs",
         "children": [
           {
-            "id": "b33ac669fa2db170",
+            "id": "869ce0660110fdd2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NEW JS/14. DOM/2. DOM编程/2. 动态样式.md",
+                "file": "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/1. 鼠标事件.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. 动态样式"
+              "title": "1. 鼠标事件"
             }
           },
           {
-            "id": "c73b9c9019d09125",
+            "id": "1c8b3fd9fd576eb2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "NEW JS/16. DOM2 与 DOM3/2. 样式/3. 元素尺寸/3. 滚动尺寸.md",
-                "mode": "source",
-                "source": false
+                "file": "html.css图片/Pasted image 20260613144741.png"
               },
-              "icon": "lucide-file",
-              "title": "3. 滚动尺寸"
-            }
-          },
-          {
-            "id": "cd65c870003096f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NEW JS/15. DOM扩展/1. Selectors API/2. querySelectorAll() 方法.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2. querySelectorAll() 方法"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260613144741"
             }
           }
         ],
@@ -69,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "item",
+                "query": "hasFocus",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -108,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.50152587890625
+    "width": 232.50152587890625
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -124,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NEW JS/9. 代理与反射/1. 代理基础/8. 代理的缺陷.md",
+                "file": "NEW JS/17. 事件/4. 事件类型/4. 键盘与输入事件/1. 键码 keyCode属性.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +118,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "8. 代理的缺陷 的反向链接列表"
+              "title": "1. 键码 keyCode属性 的反向链接列表"
             }
           },
           {
@@ -199,54 +183,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c73b9c9019d09125",
+  "active": "bbcbbdc6200c1f0a",
   "lastOpenFiles": [
-    "Pasted image 20260611142124.png",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/3. 元素尺寸/2. 客户端尺寸.md",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/3. 元素尺寸/3. 滚动尺寸.md",
-    "Pasted image 20260611141929.png",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/3. 元素尺寸/1. 偏移尺寸.md",
-    "Pasted image 20260611140652.png",
-    "Pasted image 20260611140618.png",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/2. 操作样式表/3.  deleteRule() 删除规则.md",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/3. 元素尺寸",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/2. 操作样式表/1. cssRule CSS规则.md",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/2. 操作样式表/2. insertRule() 创建规则.md",
-    "NEW JS/14. DOM/2. DOM编程/2. 动态样式.md",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/2. 操作样式表/0. 样式表.md",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/1. 存取元素样式/1. DOM样式属性与方法.md",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/1. 存取元素样式/2. 计算样式.md",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/2. 操作样式表",
-    "NEW JS/0. 补充/16. 扩展/4. 样式的类型.md",
-    "NEW JS/0. 补充/16. 扩展/1. 打开新文档.md",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/1. 存取元素样式/0. 元素的style属性.md",
-    "NEW JS/15. DOM扩展/1. Selectors API/2. querySelectorAll() 方法.md",
-    "NEW JS/14. DOM/1. 节点层级/1. Node类型/2. 节点关系.md",
-    "NEW JS/0. 补充/16. 扩展/2. Blob对象.md",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化/4. 内嵌窗格的变化.md",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式/1. 存取元素样式",
-    "NEW JS/16. DOM2 与 DOM3/2. 样式",
-    "NEW JS/0. 补充/16. 扩展/3. 内嵌窗格iframe.md",
-    "NEW JS/0. 补充/16. 扩展/3. 内嵌窗格iframe",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化/3. Node的变化.md",
-    "NEW JS/9. 代理与反射/1. 代理基础/8. 代理的缺陷.md",
-    "NEW JS/9. 代理与反射/1. 代理基础/7. 代理 另一个 代理.md",
-    "NEW JS/9. 代理与反射/1. 代理基础/6. 使用反射API.md",
-    "NEW JS/9. 代理与反射/1. 代理基础/5. 可撤销代理.md",
-    "NEW JS/9. 代理与反射/2. 代理捕获器 与 反射方法/0. Proxy 捕获器完整参考表.md",
-    "NEW JS/9. 代理与反射/1. 代理基础/4. 捕获器不变式.md",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化/未命名",
-    "NEW JS/0. 补充/16. 扩展",
-    "NEW JS/0. 补充/15. 扩展",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/2. 其他变化",
-    "NEW JS/16. DOM2 与 DOM3/1. DOM的演进/1. XML的命名空间",
-    "html.css图片/Pasted image 20260512110155.png",
-    "html.css图片/Pasted image 20260512110133.png",
-    "html.css图片/Pasted image 20260512110113.png",
-    "html.css图片/Pasted image 20260511141451.png",
-    "html.css图片/Pasted image 20260511141432.png",
-    "html.css图片/Pasted image 20260511134635.png",
-    "html.css图片/Pasted image 20260511091626.png",
+    "NEW JS/17. 事件/4. 事件类型/4. 键盘与输入事件/1. 键码 keyCode属性.md",
+    "NEW JS/17. 事件/4. 事件类型/4. 键盘与输入事件/0. 键盘与输入事件.md",
+    "NEW JS/17. 事件/4. 事件类型/2. 焦点事件/5. 焦点事件.md",
+    "NEW JS/17. 事件/4. 事件类型/4. 键盘与输入事件",
+    "NEW JS/17. 事件/4. 事件类型/1. 用户界面事件/未命名.md",
+    "NEW JS/17. 事件/0. 引入.md",
+    "NEW JS/17. 事件/4. 事件类型/2. 焦点事件",
+    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/8. 触摸屏等设备.md",
+    "NEW JS/17. 事件/4. 事件类型/1. 用户界面事件/6. 鼠标和滚轮事件/9. 无障碍问题.md",
+    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/7. mousewheel 事件.md",
+    "html.css图片/Pasted image 20260613144741.png",
+    "NEW JS/17. 事件/4. 事件类型/1. 用户界面事件/6. 鼠标和滚轮事件 与 鼠标坐标.md",
+    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/1. 鼠标事件.md",
+    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/6. 额外事件信息.md",
+    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/5. 鼠标按键.md",
+    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/3. 重复.md",
+    "NEW JS/4. 第四章 变量, 作用域与内存/2. 执行上下文 与 作用域/1. 作用域链.md",
+    "JavaScript API/笔记数据库.base",
+    "NEW JS/8. 对象、类与面向对象编程/3. 继承/0. 引言.md",
+    "NEW JS/5. 基本引用类型/0. 概念.md",
+    "未命名.md",
+    "未命名 1.md",
+    "NEW JS/1. 第一章/1. JS介绍.md",
+    "NEW JS/9. 代理与反射/1. 代理基础/0. 代理的概念.md",
+    "NEW JS/14. DOM/1. 节点层级/0. 节点层级.md",
+    "NEW JS/15. DOM扩展/1. Selectors API/0. 简介.md",
+    "NEW JS/15. DOM扩展/3. HTML5/1. CSS 类扩展/0. 简介.md",
+    "NEW JS/15. DOM扩展/3. HTML5/6. 插入标记/0. 简介.md",
+    "NEW JS/15. DOM扩展/3. HTML5/3. HTMLDocument 扩展/0. 简介.md",
+    "NEW JS/15. DOM扩展/3. HTML5/2. 焦点管理/0. 简介.md",
+    "NEW JS/16. DOM2 与 DOM3/4. 范围/未命名",
+    "JavaScript API",
+    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件",
+    "NEW JS/17. 事件/4. 事件类型/1. 用户界面事件",
+    "NEW JS/17. 事件/4. 事件类型",
+    "NEW JS/17. 事件/3. 事件对象",
+    "NEW JS/17. 事件/2. 事件处理程序",
+    "html.css图片/Pasted image 20260613103839.png",
+    "html.css图片/Pasted image 20260613103318.png",
+    "html.css图片/Pasted image 20260613100115.png",
+    "html.css图片/Pasted image 20260612135117.png",
+    "html.css图片/Pasted image 20260612123840.png",
+    "html.css图片/Pasted image 20260612085137.png",
+    "html.css图片/Pasted image 20260612084944.png",
+    "html.css图片/Pasted image 20260612084006.png",
+    "html.css图片/Pasted image 20260612083943.png",
     "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas"
   ]
 }
