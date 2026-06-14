@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "NEW JS/19. 表单脚本/2. 文本框编程/1. 选择文本.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1. 选择文本"
+            }
+          },
+          {
+            "id": "1c8b3fd9fd576eb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/1. 鼠标事件.md",
                 "mode": "source",
                 "source": false
@@ -20,21 +34,8 @@
               "icon": "lucide-file",
               "title": "1. 鼠标事件"
             }
-          },
-          {
-            "id": "1c8b3fd9fd576eb2",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "html.css图片/Pasted image 20260613144741.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260613144741"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -53,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hasFocus",
+                "query": "arguments.callee",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.50152587890625
+    "width": 200
   },
   "right": {
     "id": "77d5ba0e98f1589f",
@@ -108,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NEW JS/17. 事件/4. 事件类型/4. 键盘与输入事件/1. 键码 keyCode属性.md",
+                "file": "NEW JS/17. 事件/5.  内存与性能/0. 内存与性能.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +119,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "1. 键码 keyCode属性 的反向链接列表"
+              "title": "0. 内存与性能 的反向链接列表"
             }
           },
           {
@@ -156,16 +157,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NEW JS/14. DOM/1. 节点层级/2. Document类型.md",
+                "file": "NEW JS/17. 事件/5.  内存与性能/0. 内存与性能.md",
                 "followCursor": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2. Document类型 的大纲"
+              "title": "0. 内存与性能 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -183,54 +185,54 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "bbcbbdc6200c1f0a",
+  "active": "869ce0660110fdd2",
   "lastOpenFiles": [
-    "NEW JS/17. 事件/4. 事件类型/4. 键盘与输入事件/1. 键码 keyCode属性.md",
-    "NEW JS/17. 事件/4. 事件类型/4. 键盘与输入事件/0. 键盘与输入事件.md",
-    "NEW JS/17. 事件/4. 事件类型/2. 焦点事件/5. 焦点事件.md",
-    "NEW JS/17. 事件/4. 事件类型/4. 键盘与输入事件",
-    "NEW JS/17. 事件/4. 事件类型/1. 用户界面事件/未命名.md",
-    "NEW JS/17. 事件/0. 引入.md",
-    "NEW JS/17. 事件/4. 事件类型/2. 焦点事件",
-    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/8. 触摸屏等设备.md",
-    "NEW JS/17. 事件/4. 事件类型/1. 用户界面事件/6. 鼠标和滚轮事件/9. 无障碍问题.md",
-    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/7. mousewheel 事件.md",
+    "NEW JS/19. 表单脚本/2. 文本框编程/0. 文本框.md",
+    "NEW JS/19. 表单脚本/2. 文本框编程/1. 选择文本.md",
+    "NEW JS/19. 表单脚本/1. 表单基础/3. 表单字段/3. 表单字段的公共方法.md",
+    "NEW JS/19. 表单脚本/2. 文本框编程",
+    "NEW JS/19. 表单脚本/1. 表单基础/3. 表单字段/2. 表单字段的公共方法.md",
+    "NEW JS/19. 表单脚本/1. 表单基础/3. 表单字段/1. 表单字段的公共属性.md",
+    "NEW JS/19. 表单脚本/1. 表单基础/1. 提交表单.md",
+    "NEW JS/19. 表单脚本/1. 表单基础/3. 表单字段/0. 表单字段.md",
+    "NEW JS/19. 表单脚本/1. 表单基础/2. 重置表单.md",
+    "NEW JS/19. 表单脚本/1. 表单基础/3. 表单字段.md",
+    "NEW JS/19. 表单脚本/1. 表单基础/3. 表单字段",
+    "NEW JS/19. 表单脚本/1. 表单基础/0. 获取表单.md",
+    "NEW JS/7. 迭代器与生成器/1. 迭代器 与 生成器.md",
+    "NEW JS/19. 表单脚本/1. 表单基础",
+    "NEW JS/19. 表单脚本",
+    "NEW JS/18. 动画 与 Canvas图形/000. 跳过本章.md",
+    "NEW JS/17. 事件/6. 模拟事件/1. DOM 事件模拟/4. 自定义DOM事件 CustomEvent.md",
+    "NEW JS/18. 动画 与 Canvas图形",
+    "NEW JS/17. 事件/6. 模拟事件/1. DOM 事件模拟/3. 模拟HTML事件 HTMLEvents.md",
+    "NEW JS/17. 事件/6. 模拟事件/1. DOM 事件模拟/2. 模拟键盘事件 KeyboardEvent.md",
+    "NEW JS/17. 事件/6. 模拟事件/1. DOM 事件模拟/1. 模拟鼠标事件 MouseEvents.md",
+    "NEW JS/17. 事件/6. 模拟事件/1. DOM 事件模拟/0. event对象.md",
+    "NEW JS/17. 事件/6. 模拟事件/0. 模拟事件.md",
+    "NEW JS/17. 事件/6. 模拟事件/1. DOM 事件模拟",
+    "NEW JS/17. 事件/6. 模拟事件/1. DOM 事件模拟.md",
+    "NEW JS/17. 事件/5.  内存与性能/2. 删除事件处理程序.md",
+    "NEW JS/17. 事件/6. 模拟事件",
+    "NEW JS/17. 事件/5.  内存与性能/0. 内存与性能.md",
+    "NEW JS/17. 事件/5.  内存与性能/1. 事件委托.md",
+    "NEW JS/17. 事件/4. 事件类型/10. 事件参考/1. 所有事件类型.md",
+    "NEW JS/17. 事件/5.  内存与性能",
+    "NEW JS/17. 事件/4. 事件类型/0. 事件类型.md",
+    "NEW JS/17. 事件/4. 事件类型/9.  触摸及手势事件/2. 手势事件.md",
+    "NEW JS/17. 事件/4. 事件类型/10. 事件参考",
+    "NEW JS/17. 事件/4. 事件类型/9.  触摸及手势事件/1. 触摸事件.md",
+    "NEW JS/17. 事件/4. 事件类型/9.  触摸及手势事件",
+    "Pasted image 20260614133951.png",
+    "Pasted image 20260614133934.png",
+    "Pasted image 20260614133927.png",
+    "Pasted image 20260614133829.png",
+    "Pasted image 20260614132555.png",
+    "Pasted image 20260614124222.png",
     "html.css图片/Pasted image 20260613144741.png",
-    "NEW JS/17. 事件/4. 事件类型/1. 用户界面事件/6. 鼠标和滚轮事件 与 鼠标坐标.md",
-    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/1. 鼠标事件.md",
-    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/6. 额外事件信息.md",
-    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件/5. 鼠标按键.md",
-    "NEW JS/5. 基本引用类型/2. RegExp类型/正则表达式/特殊字符/3. 重复.md",
-    "NEW JS/4. 第四章 变量, 作用域与内存/2. 执行上下文 与 作用域/1. 作用域链.md",
-    "JavaScript API/笔记数据库.base",
-    "NEW JS/8. 对象、类与面向对象编程/3. 继承/0. 引言.md",
-    "NEW JS/5. 基本引用类型/0. 概念.md",
-    "未命名.md",
-    "未命名 1.md",
-    "NEW JS/1. 第一章/1. JS介绍.md",
-    "NEW JS/9. 代理与反射/1. 代理基础/0. 代理的概念.md",
-    "NEW JS/14. DOM/1. 节点层级/0. 节点层级.md",
-    "NEW JS/15. DOM扩展/1. Selectors API/0. 简介.md",
-    "NEW JS/15. DOM扩展/3. HTML5/1. CSS 类扩展/0. 简介.md",
-    "NEW JS/15. DOM扩展/3. HTML5/6. 插入标记/0. 简介.md",
-    "NEW JS/15. DOM扩展/3. HTML5/3. HTMLDocument 扩展/0. 简介.md",
-    "NEW JS/15. DOM扩展/3. HTML5/2. 焦点管理/0. 简介.md",
-    "NEW JS/16. DOM2 与 DOM3/4. 范围/未命名",
-    "JavaScript API",
-    "NEW JS/17. 事件/4. 事件类型/3. 鼠标和滚轮事件",
-    "NEW JS/17. 事件/4. 事件类型/1. 用户界面事件",
-    "NEW JS/17. 事件/4. 事件类型",
-    "NEW JS/17. 事件/3. 事件对象",
-    "NEW JS/17. 事件/2. 事件处理程序",
     "html.css图片/Pasted image 20260613103839.png",
     "html.css图片/Pasted image 20260613103318.png",
     "html.css图片/Pasted image 20260613100115.png",
-    "html.css图片/Pasted image 20260612135117.png",
-    "html.css图片/Pasted image 20260612123840.png",
-    "html.css图片/Pasted image 20260612085137.png",
-    "html.css图片/Pasted image 20260612084944.png",
-    "html.css图片/Pasted image 20260612084006.png",
-    "html.css图片/Pasted image 20260612083943.png",
     "HTML + css/8. 定位 堆叠顺序/定位/未命名.canvas"
   ]
 }

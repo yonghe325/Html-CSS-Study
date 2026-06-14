@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="">
+    <label for="inp">测试输入</label>
+    <input type="text" id="inp">
+    <button type="submit">提交</button>
+
+  </form>
+  <script>
+    const inp = document.querySelector("input")
+    inp.addEventListener("keydown", (event) => {
+      console.log("keyCcode : " + event.keyCode)
+      console.log("key : " + event.key)
+      console.log("char : " + event.charCode)
+      console.log("location : " + event.location)
+    }, false)
+    
+    const but = document.querySelector("button")
+    but.addEventListener("click", () => {
+      event.preventDefault()
+      console.log(inp.value)
+      inp.value = ""
+    })
+
+  </script>
+</body>
+
+</html>
